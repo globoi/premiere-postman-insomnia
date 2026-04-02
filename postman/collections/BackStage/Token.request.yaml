@@ -1,0 +1,25 @@
+$kind: http-request
+url: https://accounts.backstage.globoi.com/token
+method: POST
+headers:
+  - key: Authorization
+    value: Basic UUxmdjZEaHE2QnZRZGJxMU1JZHk1QT09OkxUS3U3TUNmNDExZTh1aVFDRHRoQ0E9PQ==
+    description: premiere
+  - key: Authorization
+    value: ""
+    disabled: true
+body:
+  type: urlencoded
+  content:
+    grant_type: client_credentials
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: |
+      const response = pm.response.json();
+      const authToken = response.access_token;
+
+      pm.environment.set("auth_token_backstage", authToken);
+    language: text/javascript
+order: 5000

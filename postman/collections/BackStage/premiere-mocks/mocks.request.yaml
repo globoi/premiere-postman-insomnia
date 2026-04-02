@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://apis.backstage.globoi.com/api/v2/premiere-mocks/premiere?filter[where][route]=/v1/championships/lives/
+method: GET
+queryParams:
+  filter[where][route]: /v1/championships/lives/
+order: 1000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/campeonato-brasileiro/edicoes/campeonato-brasileiro-2026/estatisticas/atletas?atleta_ids=82730&por_pagina=50&scout_tipo_siglas=DE%2CPPD%2CF%2CPE%2CFC%2CZG%2CPV%2CRB%2CPC%2CCA
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  atleta_ids: "82730"
+  por_pagina: "50"
+  scout_tipo_siglas: DE%2CPPD%2CF%2CPE%2CFC%2CZG%2CPV%2CRB%2CPC%2CCA
+order: 9000

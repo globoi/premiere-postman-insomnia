@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][jogo.campeonato.ge\
+  nero][neq]=M&filter[where][jogo.campeonato.nome][neq]=Premier League"
+method: GET
+queryParams:
+  filter[where][jogo.campeonato.genero][neq]: M
+  filter[where][jogo.campeonato.nome][neq]: Premier League
+order: 2000

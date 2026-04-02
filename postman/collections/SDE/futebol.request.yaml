@@ -1,0 +1,9 @@
+$kind: http-request
+url: https://api.sde.qa.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/eliminatorias-copa-europa/edicoes/eliminatorias-copa-europa-2026/jogos?data_hora_final=2026-01-29&data_hora_inicial=2026-01-30
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  data_hora_final: 2026-01-29
+  data_hora_inicial: 2026-01-30
+order: 1000

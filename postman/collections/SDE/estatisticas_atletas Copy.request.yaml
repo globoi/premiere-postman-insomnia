@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://api.sde.globoi.com/jogos/:matchId/estatisticas/atletas?atleta_ids=87402&scout_tipo_siglas=DD
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  atleta_ids: "87402"
+  scout_tipo_siglas: DD
+pathVariables:
+  matchId: "349011"
+examples: ./.resources/estatisticas_atletas Copy.resources/examples
+order: 3000

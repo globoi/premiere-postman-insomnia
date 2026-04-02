@@ -1,0 +1,21 @@
+$kind: http-request
+url: https://apis.esporte.globoi.com/api/v2/premiere-stats/premiere?filter%5Bwhere%5D%5BisEnabled%5D=true&filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D=Goleiro&filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D=Ataque&filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D=Distribui%C3%A7%C3%A3o+de+jogo&filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D=Defesa&filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D=Disciplina&filter[order]=order+ASC&filter[limit]=999
+method: GET
+queryParams:
+  - key: filter%5Bwhere%5D%5BisEnabled%5D
+    value: "true"
+  - key: filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D
+    value: Goleiro
+  - key: filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D
+    value: Ataque
+  - key: filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D
+    value: Distribui%C3%A7%C3%A3o+de+jogo
+  - key: filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D
+    value: Defesa
+  - key: filter%5Bwhere%5D%5Bcategory%5D%5Binq%5D
+    value: Disciplina
+  - key: filter[order]
+    value: order+ASC
+  - key: filter[limit]
+    value: "999"
+order: 1000

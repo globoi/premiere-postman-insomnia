@@ -1,0 +1,248 @@
+$kind: http-example
+request:
+  url: https://api.sde.globoi.com/jogos/:matchId/estatisticas/atletas?atleta_ids=105563&scout_tipo_siglas=F%2CPV%2CRB%2CFC%2CZG%2CPPD%2CPE%2CPC%2CCA%2CDE&
+  method: GET
+  headers:
+    token: "{{sde_token}}"
+  queryParams:
+    atleta_ids: "105563"
+    scout_tipo_siglas: F%2CPV%2CRB%2CFC%2CZG%2CPPD%2CPE%2CPC%2CCA%2CDE
+    "": null
+  pathVariables:
+    matchId: "346571"
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    :status: "200"
+    date: Thu, 19 Mar 2026 20:54:11 GMT
+    content-type: application/json
+    vary: Accept-Encoding
+    cache-control: max-age=30
+    etag: W/"b5af65aae82f874c560ddd859b59c63160e0599d"
+    x-request-id: 78f96774f640984fe45c4337a07351f0
+    x-served-from: sdeapi-rpaas
+    x-cache-status: MISS
+    x-frame-options: deny
+    x-xss-protection: 1; mode=block
+    x-content-type-options: nosniff
+    access-control-allow-origin: "0"
+    access-control-allow-methods: DELETE, PUT, PATCH, POST, GET, OPTIONS
+    access-control-allow-credentials: "true"
+    access-control-allow-headers: Origin,Content-Type,Accept,Authorization,apollographql-client-name,apollographql-client-version
+    x-location: SDE-Estatistica_atletas_jogo
+    content-encoding: gzip
+  body:
+    type: text
+    content: >-
+      {
+          "resultados": {
+              "estatisticas_atletas": []
+          },
+          "referencias": {
+              "edicoes": {
+                  "6927": {
+                      "super_edicao_id": null,
+                      "edicao_id": 6927,
+                      "campeonato_id": 26,
+                      "esporte_id": 1,
+                      "modalidade_id": 1,
+                      "categoria_id": 4,
+                      "nome": "Campeonato Brasileiro 2026",
+                      "slug": "campeonato-brasileiro-2026",
+                      "slug_editorial": "",
+                      "odf_code": "",
+                      "tipo_competicao": "J",
+                      "localizacao": "Brasil",
+                      "regulamento": "As 20 equipes se enfrentam em turno e returno e, ao fim das 38 rodadas, o time com o maior número de pontos fica com o título brasileiro, enquanto os quatro últimos são rebaixados para a Série B.\r\nEm caso de igualdade na pontuação, são critérios de desempate: 1) mais vitórias; 2) melhor saldo de gols; 3) mais gols pró; 4) confronto direto (entre duas equipes); 5) menos cartões vermelhos; 6) menos cartões amarelos; 7) sorteio.\r\nOs quatro primeiros entram na fase de grupos da Libertadores, enquanto o quinto colocado disputa as fases prévias da Libertadores. Caso o campeão da Libertadores e/ou o campeão ou vice da Copa do Brasil e/ou o campeão da Sul-Americana estejam no G-5, a equipe seguinte garante vaga na competição continental."
+                  }
+              },
+              "jogos": {
+                  "346571": {
+                      "jogo_id": 346571,
+                      "equipe_mandante_id": 284,
+                      "placar_oficial_mandante": null,
+                      "placar_penaltis_mandante": null,
+                      "escalacao_mandante_id": 507872,
+                      "equipe_visitante_id": 287,
+                      "placar_oficial_visitante": null,
+                      "placar_penaltis_visitante": null,
+                      "escalacao_visitante_id": 507873,
+                      "primeiro_atleta_id": null,
+                      "segundo_atleta_id": null,
+                      "data_realizacao": "2026-03-19",
+                      "hora_realizacao": "19:00:00",
+                      "hora_fim": null,
+                      "fuso_horario": "America/Sao_Paulo",
+                      "data_realizacao_timezone": "2026-03-19T19:00:00-03:00",
+                      "sede_id": 2463,
+                      "fase_id": 21074,
+                      "wo": false,
+                      "cancelado": false,
+                      "decisivo": false,
+                      "rodada": 7,
+                      "suspenso": false,
+                      "vencedor_jogo": null,
+                      "transmissoes": {
+                          "sem_transmissao": false,
+                          "plataformas": [
+                              {
+                                  "transmissao_id": 5,
+                                  "nome": "Premiere",
+                                  "logo_oficial": "https://s.sde.globo.com/media/broadcast/2023/04/14/Logo_Premiere.png",
+                                  "logo_destaque": "",
+                                  "url": "https://premiere.globo.com/?origemId=91676",
+                                  "descricao": "",
+                                  "call_to_action": "Assine"
+                              },
+                              {
+                                  "transmissao_id": 8,
+                                  "nome": "globoplay",
+                                  "logo_oficial": "https://s.sde.globo.com/media/broadcast/2023/12/13/globoplay-thumb-65701.jpg",
+                                  "logo_destaque": "",
+                                  "url": "https://vitrine.globo.com/globoplay?origemId=2143&utm_source=google&utm_medium=cpc&utm_campaign=aq_google_vitrine_perf_conv_search_cpc_web_tier1_insti_insti_na_geral&utm_content=insti-na-0-search-na-a",
+                                  "descricao": "Globoplay Plano Premium",
+                                  "call_to_action": "Assine"
+                              },
+                              {
+                                  "transmissao_id": 11,
+                                  "nome": "Cartola",
+                                  "logo_oficial": "https://s.sde.globo.com/media/broadcast/2025/03/29/jogador.png",
+                                  "logo_destaque": "",
+                                  "url": "https://vitrine.globo.com/cartola?utm_source=ge&utm_medium=ondeassistir&utm_campaign=c2025_1_cartola_conversoes&utm_term=ge&utm_content=agendage&origemId=93828",
+                                  "descricao": "Seja PRO e concorra a prêmios!",
+                                  "call_to_action": "Assine"
+                              }
+                          ]
+                      },
+                      "detalhamento_placar": [],
+                      "disputa_medalha": false,
+                      "resultado": "",
+                      "status": "Não disponivel"
+                  }
+              },
+              "fases": {
+                  "21074": {
+                      "edicao_id": 6927,
+                      "fase_id": 21074,
+                      "nome": "Fase única",
+                      "slug": "fase-unica-campeonato-brasileiro-2026",
+                      "atual": true,
+                      "data_inicio": "2026-01-28",
+                      "data_fim": "2026-12-02",
+                      "tipo": {
+                          "tipo_id": "1",
+                          "descricao": "Pontos Corridos"
+                      },
+                      "ordem": 1,
+                      "formato": {
+                          "formato_id": 0,
+                          "descricao": "Um jogo"
+                      },
+                      "disclaimer": ""
+                  }
+              },
+              "equipes": {
+                  "284": {
+                      "nome": "Grêmio Foot-Ball Porto-Alegrense",
+                      "nome_popular": "Grêmio",
+                      "apelido": "Imortal",
+                      "equipe_id": 284,
+                      "slug": "gremio",
+                      "sigla": "GRE",
+                      "genero": "M",
+                      "nacionalidade_id": 1,
+                      "escudos": {
+                          "30x30": "https://s.sde.globo.com/media/organizations/2014/04/14/gremio_30x30.png",
+                          "45x45": "https://s.sde.globo.com/media/organizations/2014/04/14/gremio_45x45.png",
+                          "60x60": "https://s.sde.globo.com/media/organizations/2014/04/14/gremio_60x60.png",
+                          "150x150": "https://s.sde.globo.com/media/organizations/2024/09/30/gremio.png",
+                          "svg": "https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg",
+                          "escudo_alternativo": "https://s.sde.globo.com/media/teams/logo_default.png",
+                          "escudo_alternativo_svg": "https://s.sde.globo.com/media/teams/logo_default.svg"
+                      },
+                      "cores": {
+                          "primaria": "#6dcafc",
+                          "secundaria": "#000000",
+                          "terciaria": "#000000"
+                      },
+                      "uniformes": [
+                          {
+                              "camisa": "https://s.sde.globo.com/media/team_jerseys/2024/03/11/TimeGremio.png",
+                              "camisa_svg": "https://s.sde.globo.com/media/team_jerseys/2024/03/11/TimeGremio.svg",
+                              "ordem": 1
+                          }
+                      ]
+                  },
+                  "287": {
+                      "nome": "Esporte Clube Vitória",
+                      "nome_popular": "Vitória",
+                      "apelido": "Vitória",
+                      "equipe_id": 287,
+                      "slug": "vitoria",
+                      "sigla": "VIT",
+                      "genero": "M",
+                      "nacionalidade_id": 1,
+                      "escudos": {
+                          "30x30": "https://s.sde.globo.com/media/organizations/2025/12/18/Vitoria-2025-30.png",
+                          "45x45": "https://s.sde.globo.com/media/organizations/2025/12/18/Vitoria-2025-45.png",
+                          "60x60": "https://s.sde.globo.com/media/organizations/2025/12/18/Vitoria-2025-65.png",
+                          "150x150": "https://s.sde.globo.com/media/organizations/2024/09/30/vitoria.png",
+                          "svg": "https://s.sde.globo.com/media/organizations/2025/12/18/Vitoria_2025.svg",
+                          "escudo_alternativo": "https://s.sde.globo.com/media/teams/logo_default.png",
+                          "escudo_alternativo_svg": "https://s.sde.globo.com/media/teams/logo_default.svg"
+                      },
+                      "cores": {
+                          "primaria": "#a80000",
+                          "secundaria": "#0a0909",
+                          "terciaria": "#000000"
+                      },
+                      "uniformes": [
+                          {
+                              "camisa": "https://s.sde.globo.com/media/team_jerseys/2024/03/10/TimeVitoria.png",
+                              "camisa_svg": "https://s.sde.globo.com/media/team_jerseys/2024/03/10/TimeVitoria.svg",
+                              "ordem": 1
+                          }
+                      ]
+                  }
+              },
+              "atletas": {
+                  "105563": {
+                      "atleta_id": 105563,
+                      "posicao": {
+                          "macro": "ATA",
+                          "sigla": "ATA",
+                          "descricao": "Atacante",
+                          "macro_posicao": "Ataque"
+                      },
+                      "nome": "Carlos Vinícius Alves Morais",
+                      "nome_popular": "Carlos Vinícius",
+                      "slug": "carlosviniciusalves",
+                      "sexo": "M",
+                      "nacionalidade_id": 1,
+                      "fotos": {
+                          "366x479": "https://s.sde.globo.com/media/person_role/2020/06/17/f8c5cda5318db5bba0109698d83c48db_original.jpeg",
+                          "300x300": "https://s.sde.globo.com/media/person_role/2026/02/09/photo_300x300_D4Dh30j.png",
+                          "220x220": "https://s.sde.globo.com/media/person_role/2026/02/09/photo_220x220_6dbQ7GV.png",
+                          "140x140": "https://s.sde.globo.com/media/person_role/2026/02/09/photo_140x140_GTU3C2P.png",
+                          "80x80": "https://s.sde.globo.com/media/person_role/2026/02/09/photo_80x80_nCQGlsX.png",
+                          "50x50": "https://s.sde.globo.com/media/person_role/2026/02/09/photo_50x50_WTxRN49.png",
+                          "35x35": "https://s.sde.globo.com/media/person_role/2026/02/09/photo_35x35_PSOXjcr.png"
+                      },
+                      "fotos_contextuais": {
+                          "284": {
+                              "equipe": 284,
+                              "spotlight": {
+                                  "url": "https://s.sde.globo.com/media/person_contract/2025/10/21/photo_spotlight_t5QUMvt.png",
+                                  "altura": 500,
+                                  "largura": 479,
+                                  "data_criacao": "2025-10-21 20:24:34",
+                                  "tipo": "spotlight"
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+order: 1000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][jogo.dataRealizaca\
+  o]=2026-03-23"
+method: GET
+queryParams:
+  - key: filter[where][jogo.dataRealizacao]
+    value: 2026-03-23
+  - key: filter[where][status_transmissao][nin]
+    value: CRIADA
+    disabled: true
+  - key: filter[where][status_transmissao][nin]
+    value: ENCERRADA
+    disabled: true
+  - key: filter[where][status_transmissao][nin]
+    value: EM_ANDAMENTO
+    disabled: true
+order: 3000

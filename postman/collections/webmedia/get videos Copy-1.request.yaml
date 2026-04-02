@@ -1,0 +1,14 @@
+$kind: http-request
+name: get videos Copy
+url: https://api.video.globoi.com/videos/with_pagination.json?access_token=apisportv1abcd105521a5361b6bab&tags.all=melhores
+  momentos|Tempo Real|lance_automatico&tags.nin=primeiro tempo|segundo
+  tempo&per_page=10&order_by=published_at.desc&page=1
+method: GET
+queryParams:
+  access_token: apisportv1abcd105521a5361b6bab
+  tags.all: melhores momentos|Tempo Real|lance_automatico
+  tags.nin: primeiro tempo|segundo tempo
+  per_page: "10"
+  order_by: published_at.desc
+  page: "1"
+order: 3000

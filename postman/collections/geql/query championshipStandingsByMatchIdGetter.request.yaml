@@ -1,0 +1,21 @@
+$kind: graphql-request
+url: "{{geql_url}}/graphql"
+query: |-
+  query championshipStandingsByMatchIdGetter($matchId: Int!) {
+      eventByMatchID(id: $matchId) {
+          match {
+              weather { tempMinC tempMaxC summary }
+              round
+              startHour
+              startDate
+              }
+          }
+          championships {
+              name
+          }
+      }
+variables: |-
+  {
+      "matchId": "346255"
+  }
+order: 1000

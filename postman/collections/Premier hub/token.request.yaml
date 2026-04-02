@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{base_url}}/v1/token"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "client_id": "PREMIERE",
+        "secret": "Aj7hgW6mlPSMhYqx3vM8VR5r5oS5asQGu7hnoYh28oD2XoIYW7"
+    }
+scripts:
+  - type: afterResponse
+    code: |
+      const response = pm.response.json();
+      const authToken = response.data.token;
+
+      pm.environment.set("auth_token", authToken);
+    language: text/javascript
+order: 6000

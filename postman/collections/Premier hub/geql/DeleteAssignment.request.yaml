@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{base_url_geql_proxy}}/mocked-queries/:mockId/assignment"
+method: DELETE
+headers:
+  X-Mock-Profile: "{{X-Mock-Profile}}"
+pathVariables:
+  mockId: "{{mockId}}"
+body:
+  type: json
+  content: |
+    {
+      "scenarioId": "event-with-forecast"
+    }
+order: 5000

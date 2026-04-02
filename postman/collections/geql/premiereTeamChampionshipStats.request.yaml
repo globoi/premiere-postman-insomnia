@@ -1,0 +1,54 @@
+$kind: graphql-request
+url: "{{geql_url}}/graphql"
+query: >-
+  query premiereTeamChampionshipStats($teamId: Int!, $championshipEditionId:
+  Int!, $format: String!="60x60"){
+    premiereTeamChampionshipStats(
+      filter: {teamId: $teamId, championshipEditionId: $championshipEditionId}
+    ) {
+      team {
+        name
+        popularName
+        badge(format: $format)
+        colors {
+          primary
+          secondary
+          tertiary
+        }
+        organization {
+          kind
+          foundedAt
+          age
+        }
+      }
+      championshipEdition {
+        name
+        currentPhase {
+          dateStart
+        }
+        championship {
+          id
+          name
+        }
+      }
+      segmentedStats {
+        sectionName
+        stats {
+          name
+          key
+          value
+        }
+      }
+      summary(limit: 2) {
+        name
+        key
+        value
+      }
+    }
+  }
+variables: |-
+  {
+    "teamId": 2192,
+    "championshipEditionId": 7002
+  }
+order: 4000

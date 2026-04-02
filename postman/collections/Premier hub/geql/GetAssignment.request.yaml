@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{base_url_geql_proxy}}/mocked-queries/:mockId/assignment"
+method: GET
+headers:
+  X-Mock-Profile: "{{X-Mock-Profile}}"
+pathVariables:
+  mockId: "{{mockId}}"
+order: 3000

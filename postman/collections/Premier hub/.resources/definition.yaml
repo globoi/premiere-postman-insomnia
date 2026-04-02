@@ -1,0 +1,11 @@
+$kind: collection
+variables:
+  base_url_geql_proxy: ""
+  X-Mock-Profile: ""
+  mockId: ""
+auth:
+  - id: 040977a2-7ff5-4dde-8273-20b162d9201a
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{auth_token}}"

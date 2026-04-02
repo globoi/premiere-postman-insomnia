@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://api.sde.globoi.com/esportes/futebol/scout_tipos
+method: GET
+order: 10000

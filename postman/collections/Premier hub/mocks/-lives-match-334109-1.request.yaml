@@ -1,0 +1,7 @@
+$kind: http-request
+name: /lives/match/334109
+url: https://premiere-hub-beta.globo.com/v1/mocks/v1/championships/lives/match/334109
+method: GET
+headers:
+  Client-ID: PREMIERE
+order: 5000

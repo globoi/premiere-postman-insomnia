@@ -1,0 +1,7 @@
+$kind: http-request
+name: admin/premiere-championships
+url: "{{base_url}}/v1/mocks/v1/admin/premiere-championships"
+method: GET
+headers:
+  Client-ID: PREMIERE
+order: 6000

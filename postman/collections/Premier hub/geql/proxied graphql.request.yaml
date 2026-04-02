@@ -1,0 +1,114 @@
+$kind: graphql-request
+url: "{{base_url_geql_proxy}}/graphql"
+query: |-
+  query GetScheduleByDate($date: Date!, $teamId: Int, $format: String!) {
+      premiereAgenda(filter: { date: $date, teamId: $teamId }) {
+          matchesWithLive {
+              id
+              startDate
+              startHour
+              payingPublic
+              totalPublic
+              moment
+              
+              homeTeam { ...TeamInformation }
+              awayTeam { ...TeamInformation }
+              
+              liveWatchSources {
+                  name
+                  transmissionId
+              }
+              
+              transmission {
+                  ... on TRTransmission {
+                      bannerSource
+                      featuredVideo {
+                          thumb
+                      }
+                      
+                      period {
+                          id
+                          label
+                      }
+                      
+                      gameVideos {
+                          title
+                          description
+                          mediaType
+                          
+                          video {
+                              id
+                              serviceId
+                              subscriberOnly
+                          }
+                      }
+                      liveTouchpoint {
+                          transmission {
+                             timerStart
+                          }
+                      }
+                  }
+              }
+          }
+          
+          matchesWithoutLive {
+              id
+              startDate
+              startHour
+              payingPublic
+              totalPublic
+              moment
+              
+              homeTeam { ...TeamInformation }
+              awayTeam { ...TeamInformation }
+              
+              liveWatchSources {
+                  name
+                  transmissionId
+              }
+              
+              transmission {
+                  ... on TRTransmission {
+                      featuredVideo {
+                          thumb
+                      }
+                      
+                      period {
+                          id
+                          label
+                      }
+                  }
+              }
+          }
+          
+          championship {
+              id
+              name
+              premiereLogo {
+                  pdf
+              }
+          }
+      }
+  }
+
+  fragment TeamInformation on Team {
+      id
+      slug
+      name
+      abbreviation
+      popularName
+      badge(format: $format)
+      colors {
+          primary
+          secondary
+      }
+  }
+variables: |-
+  {
+    "date": "2026-04-01",
+    "teamId": 267,
+    "format": "x45"
+  }
+headers:
+  X-Mock-Profile: "{{X-Mock-Profile}}"
+order: 2000

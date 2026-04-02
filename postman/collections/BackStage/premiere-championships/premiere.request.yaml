@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{BACKSTAGE_BASE_URL}}/premiere-championships/premiere?filter[perpage]=10\
+  0&filter[where][isActivated]=true"
+method: GET
+queryParams:
+  filter[perpage]: "100"
+  filter[where][isActivated]: "true"
+order: 1000

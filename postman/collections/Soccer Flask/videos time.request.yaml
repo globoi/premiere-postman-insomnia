@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{soccer-flask}}/v1/matches/tag/melhores-momentos/time/:teamId/videos"
+method: GET
+queryParams:
+  - key: page
+    value: "1"
+    disabled: true
+  - key: per_page
+    value: "20"
+    disabled: true
+pathVariables:
+  teamId: "262"
+order: 1000

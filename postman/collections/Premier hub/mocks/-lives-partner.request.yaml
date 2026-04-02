@@ -1,0 +1,7 @@
+$kind: http-request
+name: /lives/partner
+url: "{{base_url}}/v1/mocks/v1/championships/lives/partner"
+method: GET
+headers:
+  Client-ID: PREMIERE
+order: 3000

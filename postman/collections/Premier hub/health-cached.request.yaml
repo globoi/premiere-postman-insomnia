@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{base_url}}/v1/health-cached"
+method: GET
+order: 5000

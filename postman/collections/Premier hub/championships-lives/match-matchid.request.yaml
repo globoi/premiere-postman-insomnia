@@ -1,0 +1,9 @@
+$kind: http-request
+name: match/:matchid
+url: "{{base_url}}/v1/championships/lives/match/:matchid"
+method: GET
+headers:
+  Client-ID: PREMIERE
+pathVariables:
+  matchid: "349831"
+order: 1000

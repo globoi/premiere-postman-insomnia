@@ -1,0 +1,45 @@
+$kind: graphql-request
+url: "{{geql_url}}/graphql"
+query: |
+  query premiereAthleteMatchStats($filter: PremiereAthleteMatchStatsFilter!) {
+    premiereAthleteMatchStats(filter: $filter) {
+      athleteId
+      matchId
+      basicInfo {
+        name
+        popularName
+        position
+        athlete {
+          photoURL(filter: { size: x220 })
+        }
+      }
+      personalDetails {
+        club
+        nationality
+        age
+        weight
+        height
+      }
+      championshipSummary {
+        name
+        key
+        value
+      }
+      segmentedStats {
+        sectionName
+        stats {
+          name
+          key
+          value
+        }
+      }
+    }
+  }
+variables: |-
+  {
+      "filter": {
+          "athleteId": 132071,
+          "matchId": 346200
+      }
+  }
+order: 5000

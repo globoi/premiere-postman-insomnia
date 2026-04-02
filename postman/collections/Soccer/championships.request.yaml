@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{soccer-host}}/v2/premiere/championships?startDate=2025-11-14&endDate=20\
+  25-12-26"
+method: GET
+queryParams:
+  startDate: 2025-11-14
+  endDate: 2025-12-26
+order: 1000

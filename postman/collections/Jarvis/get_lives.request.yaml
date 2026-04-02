@@ -1,0 +1,49 @@
+$kind: graphql-request
+url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql
+query: |
+  query Broadcasts($filtersInput: BroadcastInput) {
+    broadcasts(filtersInput: $filtersInput) {
+      mediaId
+      transmissionId
+      name
+      media {
+        description
+        title {
+          headline
+        }
+        headline
+        thumb
+        channel {
+          id
+        }
+        authorizationExternalIds {
+          aeid
+          type
+        }
+      }
+      channelId
+      slug
+      epgCurrentSlots(limit: 1) {
+        relatedEventId
+        name
+        description
+        relatedEvent {
+          ... on SoccerMatch {
+            id
+            matchId
+          }
+        }
+      }
+    }
+  }
+variables: |-
+  {
+      "affiliateCode": "RJ"
+  }
+headers:
+  x-platform-id: back-end
+  x-device-id: undefined
+  x-client-version: 1_0
+  x-tenant-id: premiere
+examples: ./.resources/get_lives.resources/examples
+order: 1000

@@ -1,0 +1,26 @@
+# Use this workspace to collaborate
+workspace:
+  id: f05936be-4417-4cb1-8dc3-ed4adf05f0b0
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Soccer: 49899289-f678338e-f1e5-44dd-8fa2-88185401b7d1
+    ../postman/collections/SDE: 49899289-f02ed67f-5228-4959-96a2-a0a915a50699
+    ../postman/collections/BackStage: 49899289-dc1b3a4a-41db-4477-9d9b-ae607e5dc473
+    ../postman/collections/Premier hub: 49899289-ac96315b-1b3a-4c0b-8997-909397d65291
+    ../postman/collections/Soccer Flask: 49899289-91c42a04-c3a7-4033-be0d-8034cb9ff1ed
+    ../postman/collections/webmedia: 49899289-7417f775-17bc-44a8-859f-d463827d6ffe
+    ../postman/collections/Jarvis: 49899289-14496dc2-9e22-47ff-8422-cd2c2642b183
+    ../postman/collections/geql: 49899289-7968eb23-e4fb-4acc-a144-c0ecdc11e798
+  environments:
+    ../postman/environments/prd.environment.yaml: 49899289-b6b6fad8-5fda-4d0a-aafc-24f989f1e18f
+    ../postman/environments/dev.environment.yaml: 49899289-35b4e679-03ab-466b-8d09-0897bb5f9c89
+    ../postman/environments/local.environment.yaml: 49899289-1bf86970-b5a2-48a5-9bd0-b882a4087af1
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

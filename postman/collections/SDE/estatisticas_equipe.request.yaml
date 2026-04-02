@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/copa-do-brasil/edicoes/copa-do-brasil-2026/estatisticas/equipes?equipe_ids=2192&scout_tipo_siglas=DD
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  equipe_ids: "2192"
+  scout_tipo_siglas: DD
+examples: ./.resources/estatisticas_equipe.resources/examples
+order: 4000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{BACKSTAGE_BASE_URL}}/remote-configs-api/premiere/690fe361-8f04-436d-bc8\
+  a-722be399781a"
+method: GET
+order: 7000

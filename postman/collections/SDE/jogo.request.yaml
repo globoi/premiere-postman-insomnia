@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://api.sde.globoi.com/jogos/:matchid
+method: GET
+headers:
+  token: "{{sde_token}}"
+pathVariables:
+  matchid: "346596"
+order: 7000

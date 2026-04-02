@@ -1,0 +1,9 @@
+$kind: http-request
+name: :partner
+url: "{{base_url}}/v1/championships/lives/:partner/mock"
+method: GET
+headers:
+  Client-ID: PREMIERE
+pathVariables:
+  partner: globo-cartola
+order: 2000

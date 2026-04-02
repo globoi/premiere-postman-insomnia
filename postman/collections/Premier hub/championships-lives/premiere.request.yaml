@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/v1/championships/lives/premiere"
+method: GET
+headers:
+  Client-ID: PREMIERE
+order: 2000

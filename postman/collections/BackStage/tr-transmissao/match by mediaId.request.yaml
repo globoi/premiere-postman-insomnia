@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][videosTransmissao.\
+  video.identifier]=6082049&filter[where][status_transmissao]=EM_ANDAMENTO&filt\
+  er[where][status.slug][inq]=published&filter[where][status.slug][inq]=publish\
+  ed_draft&filter[where][data_realizacao][between][0]=2026-02-06&filter[where][\
+  data_realizacao][between][1]=2026-02-06"
+method: GET
+queryParams:
+  - key: filter[where][videosTransmissao.video.identifier]
+    value: "6082049"
+    description: Media ID
+  - key: filter[where][status_transmissao]
+    value: EM_ANDAMENTO
+  - key: filter[where][status.slug][inq]
+    value: published
+  - key: filter[where][status.slug][inq]
+    value: published_draft
+  - key: filter[where][data_realizacao][between][0]
+    value: 2026-02-06
+  - key: filter[where][data_realizacao][between][1]
+    value: 2026-02-06
+examples: ./.resources/match by mediaId.resources/examples
+order: 4000

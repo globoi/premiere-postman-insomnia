@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos
+method: GET
+headers:
+  token: "{{sde_token}}"
+order: 13000

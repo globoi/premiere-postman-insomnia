@@ -1,0 +1,78 @@
+$kind: graphql-request
+url: "{{geql_url}}/graphql"
+query: |-
+  query premiereAgenda ($date: Date!){
+    premiereAgenda(filter: {date: $date}) {
+      matchesWithLive {
+        id
+        homeTeam {
+          name
+          id
+        }
+        awayTeam {
+          name
+          id
+        }
+        startDate
+        startHour
+        payingPublic
+        totalPublic
+        liveWatchSources {
+          name
+          transmissionId
+        }
+        transmission {
+          ...TR
+        }
+      }
+      matchesWithoutLive {
+        id
+        editorialData {
+          logo {
+            url
+          }
+        }
+        transmission {
+          ...TR
+        }
+        homeTeam {
+          name
+          id
+        }
+        awayTeam {
+          name
+          id
+        }
+        startDate
+        startHour
+        payingPublic
+        totalPublic
+        liveWatchSources {
+          name
+          transmissionId
+        }
+      }
+      championship {
+        name
+        premiereLogo {
+          svg
+          pdf
+          png
+        }
+      }
+    }
+  }
+
+  fragment TR on TRTransmission {
+    id
+    featuredVideo {
+      caption
+      id
+      thumb
+    }
+  }
+variables: |-
+  {
+    "date": "2026-04-03"
+  }
+order: 6000

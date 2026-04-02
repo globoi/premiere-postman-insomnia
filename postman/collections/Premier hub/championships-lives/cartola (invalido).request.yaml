@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/v1/championships/lives/cartola"
+method: GET
+headers:
+  Client-ID: PREMIERE
+order: 4000

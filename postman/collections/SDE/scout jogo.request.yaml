@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://api.sde.globoi.com/jogos/346558/scouts
+method: GET
+headers:
+  token: "{{sde_token}}"
+order: 11000
