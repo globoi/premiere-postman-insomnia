@@ -1,49 +1,18 @@
-$kind: graphql-request
-url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql
-query: |
-  query Broadcasts($filtersInput: BroadcastInput) {
-    broadcasts(filtersInput: $filtersInput) {
-      mediaId
-      transmissionId
-      name
-      media {
-        description
-        title {
-          headline
-        }
-        headline
-        thumb
-        channel {
-          id
-        }
-        authorizationExternalIds {
-          aeid
-          type
-        }
-      }
-      channelId
-      slug
-      epgCurrentSlots(limit: 1) {
-        relatedEventId
-        name
-        description
-        relatedEvent {
-          ... on SoccerMatch {
-            id
-            matchId
-          }
-        }
-      }
-    }
-  }
-variables: |-
-  {
-      "affiliateCode": "RJ"
-  }
+$kind: http-request
+name: get_lives
+url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   &variables={"filtersInput":{"affiliateCode":"RJ"}}
+method: GET
 headers:
   x-platform-id: back-end
   x-device-id: undefined
-  x-client-version: 1_0
-  x-tenant-id: premiere
-examples: ./.resources/get_lives.resources/examples
-order: 1000
+  x-client-version: premiere-beta
+queryParams:
+  query: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadca\
+    sts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20n\
+    ame%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%2\
+    0thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%2\
+    0type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%\
+    20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20Soc\
+    cerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   "
+  variables: '{"filtersInput":{"affiliateCode":"RJ"}}'
+order: 1432709427628029
