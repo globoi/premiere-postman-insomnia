@@ -1,0 +1,48 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# YAML files - ensure consistent line endings and diff handling
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Postman specific files
+*.request.yaml text eol=lf linguist-language=YAML
+*.environment.yaml text eol=lf linguist-language=YAML
+*.globals.yaml text eol=lf linguist-language=YAML
+*.example.yaml text eol=lf linguist-language=YAML
+definition.yaml text eol=lf linguist-language=YAML
+resources.yaml text eol=lf linguist-language=YAML
+
+# Documentation files
+*.md text eol=lf
+*.txt text eol=lf
+README* text eol=lf
+LICENSE* text eol=lf
+CHANGELOG* text eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# Configuration files
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+
+# Exclude sensitive files from export-ignore (if needed)
+# Uncomment the following lines if you want to exclude certain files from git archive
+# *.environment.yaml export-ignore
+# postman/environments/ export-ignore
+
+# Binary files (if any are added later)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.tgz binary
+
+# Treat certain paths as generated (if applicable)
+# .postman/ linguist-generated=true
