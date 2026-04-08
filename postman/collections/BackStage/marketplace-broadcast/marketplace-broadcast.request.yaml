@@ -1,0 +1,5 @@
+$kind: http-request
+name: marketplace-broadcast
+url: https://apis.backstage.globoi.com/api/v2/marketplace-broadcast-api/premiere
+method: GET
+order: 1000
