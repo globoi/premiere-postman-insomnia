@@ -2,22 +2,15 @@ name: prd
 values:
   - key: base_url
     value: 'http://premiere-hub-gcp-prod.http-apps.tsuru.gcp.i.globo'
-    enabled: true
   - key: auth_token
     value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfaWQiOiJQUkVNSUVSRSIsIm5hbWUiOiJwcmVtaWVyZSIsImV4cCI6MTc3MTg5Nzc3MSwiaWF0IjoxNzcxODExMzcxfQ.BHt9PqrYyWuZdLylHMIc6P3xR9s0JMeNX3TAEwCVknI
-    enabled: true
   - key: geql_url
     value: 'https://geql.globo.com'
-    enabled: true
   - key: auth_token_backstage
     value: eyJhbGciOiJSUzI1NiIsImtpZCI6IjhhN2E2M2MwY2JlNTVhZDBiYjBlM2ZhMzhkOTQ5ZjE3ZmMyZmEzMmIiLCJ0eXAiOiJKV1QifQ.eyJjaWQiOiJRTGZ2NkRocTZCdlFkYnExTUlkeTVBPT0iLCJhdWQiOiJzb2NjZXItYXBpQGFwcHMuYmFja3N0YWdlIiwiaXNzIjoiYWNjb3VudHMuYmFja3N0YWdlLmdsb2JvaS5jb20iLCJzdWIiOiJzb2NjZXItYXBpQGFwcHMuYmFja3N0YWdlIiwiZXhwIjoxNzcwMzAzNTU0LCJpYXQiOjE3NzAzMDI2NTR9.wm8jq-BLKU7HwN2VwycQW-MZZaejlTpjCe8xmJHdUmnNMrszEQEH3E4FOHkYZ9Xr_3LecbYu9KLWeD39Ci7_w2l0E6DwlrN_1-6LTPlEbsqDBCkeegVxjDbpkQWyOoAQNCJqHb-9XICH3JyvXzqNQkKHXpr7O47nCDYRFTLTFJM7AKQ2Lb245ALetpKQf8CA9d5nWmdBmfnM1k4LtgC3pW0qVISqAFgSTQ7ht7Lp93OoqKou_wHUoT8wVE-FOQqU3IkNRMxsRpMfoxHiwqVGFm7hBimDsIhMDoHWq7Lq7EZWqRN4NhV6pvWm2JLChTVB8Uouvz098zu6_FmURVshmQ
-    enabled: true
   - key: BACKSTAGE_BASE_URL
     value: 'https://apis.backstage.globoi.com/api/v2'
-    enabled: true
   - key: soccer-host
     value: ''
-    enabled: true
   - key: soccer-flask
     value: ''
-    enabled: true

@@ -1,0 +1,60 @@
+$kind: http-example
+request:
+  url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes/:edicao/fases/:fase/rodadas
+  method: GET
+  headers:
+    - key: token
+      value: "{{sde_token}}"
+  pathVariables:
+    - key: campeonato
+      value: copa-do-brasil
+    - key: edicao
+      value: copa-do-brasil-2026
+    - key: fase
+      value: primeira-fase-copa-do-brasil-2026
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Wed, 29 Apr 2026 19:34:44 GMT
+    - key: content-type
+      value: application/json; charset=UTF-8
+    - key: content-length
+      value: "18"
+    - key: connection
+      value: keep-alive
+    - key: cache-control
+      value: max-age=30
+    - key: etag
+      value: '"c41c4f054dc7327e0a81cf1274333a972e8a6191"'
+    - key: x-request-id
+      value: 51f650fd77455a9a1c0c8e1955ad63cb
+    - key: x-served-from
+      value: sdeapi-rpaas
+    - key: x-cache-status
+      value: HIT
+    - key: x-frame-options
+      value: deny
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: access-control-allow-origin
+      value: "0"
+    - key: access-control-allow-methods
+      value: DELETE, PUT, PATCH, POST, GET, OPTIONS
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-allow-headers
+      value: Origin,Content-Type,Accept,Authorization,apollographql-client-name,apollographql-client-version
+    - key: x-location
+      value: SDE-Lista_rodadas_por_fase
+  body:
+    type: json
+    content: |-
+      {
+        "resultados": {}
+      }
+order: 936229556808214
+name: copa-do-brasil

@@ -1,0 +1,9 @@
+$kind: http-request
+name: phases
+url: "{{base_url}}/v1/championships/:championship/phases"
+method: GET
+headers:
+  Client-ID: PREMIERE
+pathVariables:
+  championship: campeonato-brasileiro
+order: 3401397015475750

@@ -1,0 +1,158 @@
+$kind: http-example
+request:
+  url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   &variables={"filtersInput":{"affiliateCode":"RJ"}}
+  method: GET
+  headers:
+    x-platform-id: back-end
+    x-device-id: undefined
+    x-client-version: premiere
+  queryParams:
+    query: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   "
+    variables: '{"filtersInput":{"affiliateCode":"RJ"}}'
+response:
+  statusCode: 200
+  statusText: OK
+  body:
+    type: json
+    content: |-
+      {
+        "data": {
+          "broadcasts": [
+            {
+              "transmissionId": 956,
+              "mediaId": "6082049",
+              "name": "Premiere 24 horas",
+              "channelId": "936",
+              "slug": "premiere-24-horas",
+              "media": {
+                "description": "Canal 24 horas",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Premiere Clubes",
+                "thumb": "https://s02.video.glbimg.com/x216/6082049.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "id": "",
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:346417",
+                  "name": "Campeonato Brasileiro De Futebol",
+                  "description": "Aqui no Brasileirão tem coisa pra caramba! Tem a qualidade em 4K, tem o Aquecimento com muito pré-jogo e tem o Super Brasileirão de Sábado com os melhores jogos!",
+                  "relatedEvent": {
+                    "id": "sde:346417",
+                    "matchId": "346417"
+                  }
+                }
+              ]
+            },
+            {
+              "transmissionId": 1515,
+              "mediaId": "6942200",
+              "name": "Premiere 2",
+              "channelId": "936",
+              "slug": "premiere-2",
+              "media": {
+                "description": "Transmissão ao Vivo – Premiere",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Transmissão ao Vivo – Premiere",
+                "thumb": "https://s01.video.glbimg.com/x216/6942200.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "id": "",
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:346420",
+                  "name": "Campeonato Brasileiro De Futebol",
+                  "description": "Aqui no Brasileirão tem coisa pra caramba! Tem a qualidade em 4K, tem o Aquecimento com muito pré-jogo e tem o Super Brasileirão de Sábado com os melhores jogos!",
+                  "relatedEvent": {
+                    "id": "sde:346420",
+                    "matchId": "346420"
+                  }
+                }
+              ]
+            },
+            {
+              "transmissionId": 1516,
+              "mediaId": "6942216",
+              "name": "Premiere 3",
+              "channelId": "936",
+              "slug": "premiere-3",
+              "media": {
+                "description": "Transmissão ao Vivo – Premiere",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Transmissão ao Vivo – Premiere",
+                "thumb": "https://s01.video.glbimg.com/x216/6942216.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "id": "",
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:346415",
+                  "name": "Campeonato Brasileiro De Futebol",
+                  "description": "Aqui no Brasileirão tem coisa pra caramba! Tem a qualidade em 4K, tem o Aquecimento com muito pré-jogo e tem o Super Brasileirão de Sábado com os melhores jogos!",
+                  "relatedEvent": {
+                    "id": "sde:346415",
+                    "matchId": "346415"
+                  }
+                }
+              ]
+            },
+            {
+              "transmissionId": 1521,
+              "mediaId": "6942237",
+              "name": "Premiere 8",
+              "channelId": "936",
+              "slug": "premiere-8",
+              "media": {
+                "description": "Transmissão ao Vivo – Premiere",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Transmissão ao Vivo – Premiere",
+                "thumb": "https://s02.video.glbimg.com/x216/6942237.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "id": "",
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "epgCurrentSlots": []
+            }
+          ]
+        }
+      }
+order: 1777985233068

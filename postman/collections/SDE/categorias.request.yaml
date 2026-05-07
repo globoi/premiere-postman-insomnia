@@ -1,0 +1,7 @@
+$kind: http-request
+name: categorias
+url: https://api.sde.globoi.com/esportes/futebol/categorias
+method: GET
+headers:
+  token: "{{sde_token}}"
+order: 1563

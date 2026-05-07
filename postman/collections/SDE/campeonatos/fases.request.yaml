@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes/:edicao/fases
+method: GET
+headers:
+  token: "{{sde_token}}"
+pathVariables:
+  campeonato: copa-do-brasil
+  edicao: copa-do-brasil-2026
+examples: .resources/fases.resources/examples
+order: 1777490203235

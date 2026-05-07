@@ -1,0 +1,11 @@
+$kind: http-request
+name: status
+url: https://api.sde.globoi.com/atletas/:athleteID/status
+method: GET
+headers:
+  - key: token
+    value: "{{sde_token}}"
+pathVariables:
+  - key: athleteID
+    value: "99552"
+order: 3578886792346734

@@ -1,0 +1,147 @@
+$kind: http-example
+request:
+  url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes/:edicao/fases
+  method: GET
+  headers:
+    - key: token
+      value: "{{sde_token}}"
+  pathVariables:
+    - key: campeonato
+      value: campeonato-brasileiro
+    - key: edicao
+      value: campeonato-brasileiro-2026
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Wed, 29 Apr 2026 19:20:45 GMT
+    - key: content-type
+      value: application/json
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding
+    - key: cache-control
+      value: max-age=120
+    - key: etag
+      value: W/"9ffedb1e55fdbb459f8a506911010c690cf857b3"
+    - key: x-request-id
+      value: 5613eb7788840d64482eb8c467662e9f
+    - key: x-served-from
+      value: sdeapi-rpaas
+    - key: x-cache-status
+      value: HIT
+    - key: x-frame-options
+      value: deny
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: access-control-allow-origin
+      value: "0"
+    - key: access-control-allow-methods
+      value: DELETE, PUT, PATCH, POST, GET, OPTIONS
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-allow-headers
+      value: Origin,Content-Type,Accept,Authorization,apollographql-client-name,apollographql-client-version
+    - key: x-location
+      value: SDE-Lista_fases_por_edicao
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: >-
+      {
+        "resultados": {
+          "fases": [
+            {
+              "edicao_id": 6927,
+              "fase_id": 21074,
+              "nome": "Fase única",
+              "slug": "fase-unica-campeonato-brasileiro-2026",
+              "atual": true,
+              "data_inicio": "2026-01-28",
+              "data_fim": "2026-12-02",
+              "tipo": {
+                "tipo_id": "1",
+                "descricao": "Pontos Corridos"
+              },
+              "ordem": 1,
+              "formato": {
+                "formato_id": 0,
+                "descricao": "Um jogo"
+              },
+              "disclaimer": ""
+            }
+          ]
+        },
+        "referencias": {
+          "esportes": {
+            "1": {
+              "esporte_id": 1,
+              "nome": "Futebol",
+              "slug": "futebol",
+              "codigo_odf": "FBL",
+              "logo": "https://s.sde.globo.com/media/sports/logo_default.png",
+              "logo_svg": "https://s.sde.globo.com/media/sports/futebol.svg"
+            }
+          },
+          "modalidades": {
+            "1": {
+              "modalidade_id": 1,
+              "esporte_id": 1,
+              "nome": "Futebol de campo",
+              "slug": "futebol_de_campo",
+              "codigo_odf": "FB0400000"
+            }
+          },
+          "categorias": {
+            "4": {
+              "categoria_id": 4,
+              "esporte_id": 1,
+              "nome": "Masculino",
+              "slug": "profissional",
+              "codigo_odf": ""
+            }
+          },
+          "campeonatos": {
+            "26": {
+              "campeonato_id": 26,
+              "nome": "Campeonato Brasileiro",
+              "nome_popular": "",
+              "nome_alternativo": "Brasileiro - Série A",
+              "slug": "campeonato-brasileiro",
+              "genero": "M",
+              "esporte_id": 1,
+              "modalidade_id": 1,
+              "categoria_id": 4,
+              "logo": "https://s.sde.globo.com/media/championships/brasileirao-serie-a.png",
+              "logo_svg": "https://s.sde.globo.com/media/championships/brasileirao-serie-a.svg"
+            }
+          },
+          "edicoes": {
+            "6927": {
+              "super_edicao_id": null,
+              "edicao_id": 6927,
+              "campeonato_id": 26,
+              "esporte_id": 1,
+              "modalidade_id": 1,
+              "categoria_id": 4,
+              "nome": "Campeonato Brasileiro 2026",
+              "slug": "campeonato-brasileiro-2026",
+              "slug_editorial": "",
+              "odf_code": "",
+              "tipo_competicao": "J",
+              "localizacao": "Brasil",
+              "regulamento": "As 20 equipes se enfrentam em turno e returno e, ao fim das 38 rodadas, o time com o maior número de pontos fica com o título brasileiro, enquanto os quatro últimos são rebaixados para a Série B.\r\nEm caso de igualdade na pontuação, são critérios de desempate: 1) mais vitórias; 2) melhor saldo de gols; 3) mais gols pró; 4) confronto direto (entre duas equipes); 5) menos cartões vermelhos; 6) menos cartões amarelos; 7) sorteio.\r\nOs quatro primeiros entram na fase de grupos da Libertadores, enquanto o quinto colocado disputa as fases prévias da Libertadores. Caso o campeão da Libertadores e/ou o campeão ou vice da Copa do Brasil e/ou o campeão da Sul-Americana estejam no G-5, a equipe seguinte garante vaga na competição continental."
+            }
+          }
+        },
+        "paginacao": {}
+      }
+order: 1777490993535
+name: campeonato-brasileiro

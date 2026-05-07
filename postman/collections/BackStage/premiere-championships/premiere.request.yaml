@@ -1,8 +1,15 @@
 $kind: http-request
-url: "{{BACKSTAGE_BASE_URL}}/premiere-championships/premiere?filter[perpage]=10\
-  0&filter[where][isActivated]=true"
+name: premiere
+url: "{{BACKSTAGE_BASE_URL}}/premiere-championships/premiere?filter[perpage]=100&filter[where][isActivated]=true&filter[order]=position"
 method: GET
 queryParams:
-  filter[perpage]: "100"
-  filter[where][isActivated]: "true"
+  - key: filter[perpage]
+    value: "100"
+    $type: ""
+  - key: filter[where][isActivated]
+    value: "true"
+    $type: ""
+  - key: filter[order]
+    value: position
+    $type: ""
 order: 1000

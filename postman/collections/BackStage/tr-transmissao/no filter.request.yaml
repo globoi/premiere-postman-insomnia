@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge"
+method: GET
+examples: .resources/no filter.resources/examples
+order: 5000

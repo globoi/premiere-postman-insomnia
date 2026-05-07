@@ -1,0 +1,299 @@
+$kind: http-example
+request:
+  url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes/:edicao/fases
+  method: GET
+  headers:
+    - key: token
+      value: "{{sde_token}}"
+  pathVariables:
+    - key: campeonato
+      value: copa-do-brasil
+    - key: edicao
+      value: copa-do-brasil-2026
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Wed, 29 Apr 2026 19:33:16 GMT
+    - key: content-type
+      value: application/json
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding
+    - key: cache-control
+      value: max-age=120
+    - key: etag
+      value: W/"ebb5bc8ac10497512d3497892e28b852187ac7ee"
+    - key: x-request-id
+      value: 8bda86de7c4caf52973d391e14548dc2
+    - key: x-served-from
+      value: sdeapi-rpaas
+    - key: x-cache-status
+      value: HIT
+    - key: x-frame-options
+      value: deny
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: access-control-allow-origin
+      value: "0"
+    - key: access-control-allow-methods
+      value: DELETE, PUT, PATCH, POST, GET, OPTIONS
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-allow-headers
+      value: Origin,Content-Type,Accept,Authorization,apollographql-client-name,apollographql-client-version
+    - key: x-location
+      value: SDE-Lista_fases_por_edicao
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: >-
+      {
+        "resultados": {
+          "fases": [
+            {
+              "edicao_id": 7002,
+              "fase_id": 21374,
+              "nome": "Primeira fase",
+              "slug": "primeira-fase-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-02-17",
+              "data_fim": "2026-02-19",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 1,
+              "formato": {
+                "formato_id": 0,
+                "descricao": "Um jogo"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21375,
+              "nome": "Segunda fase",
+              "slug": "segunda-fase-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-02-20",
+              "data_fim": "2026-03-05",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 2,
+              "formato": {
+                "formato_id": 0,
+                "descricao": "Um jogo"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21376,
+              "nome": "Terceira fase",
+              "slug": "terceira-fase-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-03-06",
+              "data_fim": "2026-03-12",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 3,
+              "formato": {
+                "formato_id": 0,
+                "descricao": "Um jogo"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21377,
+              "nome": "Quarta fase",
+              "slug": "quarta-fase-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-03-13",
+              "data_fim": "2026-03-22",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 4,
+              "formato": {
+                "formato_id": 0,
+                "descricao": "Um jogo"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21378,
+              "nome": "Quinta fase",
+              "slug": "quinta-fase-copa-do-brasil-2026",
+              "atual": true,
+              "data_inicio": "2026-03-23",
+              "data_fim": "2026-05-14",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 5,
+              "formato": {
+                "formato_id": 1,
+                "descricao": "Dois Jogos"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21379,
+              "nome": "Oitavas de final",
+              "slug": "oitavas-de-final-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-05-15",
+              "data_fim": "2026-08-06",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 6,
+              "formato": {
+                "formato_id": 1,
+                "descricao": "Dois Jogos"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21380,
+              "nome": "Quartas de final",
+              "slug": "quartas-de-final-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-08-07",
+              "data_fim": "2026-09-03",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 7,
+              "formato": {
+                "formato_id": 1,
+                "descricao": "Dois Jogos"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21381,
+              "nome": "Semifinal",
+              "slug": "semifinal-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-09-04",
+              "data_fim": "2026-11-08",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 8,
+              "formato": {
+                "formato_id": 1,
+                "descricao": "Dois Jogos"
+              },
+              "disclaimer": ""
+            },
+            {
+              "edicao_id": 7002,
+              "fase_id": 21382,
+              "nome": "Final",
+              "slug": "final-copa-do-brasil-2026",
+              "atual": false,
+              "data_inicio": "2026-11-09",
+              "data_fim": "2026-12-06",
+              "tipo": {
+                "tipo_id": "2",
+                "descricao": "Mata-Mata"
+              },
+              "ordem": 9,
+              "formato": {
+                "formato_id": 0,
+                "descricao": "Um jogo"
+              },
+              "disclaimer": ""
+            }
+          ]
+        },
+        "referencias": {
+          "esportes": {
+            "1": {
+              "esporte_id": 1,
+              "nome": "Futebol",
+              "slug": "futebol",
+              "codigo_odf": "FBL",
+              "logo": "https://s.sde.globo.com/media/sports/logo_default.png",
+              "logo_svg": "https://s.sde.globo.com/media/sports/futebol.svg"
+            }
+          },
+          "modalidades": {
+            "1": {
+              "modalidade_id": 1,
+              "esporte_id": 1,
+              "nome": "Futebol de campo",
+              "slug": "futebol_de_campo",
+              "codigo_odf": "FB0400000"
+            }
+          },
+          "categorias": {
+            "4": {
+              "categoria_id": 4,
+              "esporte_id": 1,
+              "nome": "Masculino",
+              "slug": "profissional",
+              "codigo_odf": ""
+            }
+          },
+          "campeonatos": {
+            "31": {
+              "campeonato_id": 31,
+              "nome": "Copa do Brasil",
+              "nome_popular": "",
+              "nome_alternativo": "Copa do Brasil",
+              "slug": "copa-do-brasil",
+              "genero": "F",
+              "esporte_id": 1,
+              "modalidade_id": 1,
+              "categoria_id": 4,
+              "logo": "https://s.sde.globo.com/media/championships/Copa_do_Brasil.png",
+              "logo_svg": "https://s.sde.globo.com/media/championships/Copa_do_Brasil2.svg"
+            }
+          },
+          "edicoes": {
+            "7002": {
+              "super_edicao_id": null,
+              "edicao_id": 7002,
+              "campeonato_id": 31,
+              "esporte_id": 1,
+              "modalidade_id": 1,
+              "categoria_id": 4,
+              "nome": "Copa do Brasil 2026",
+              "slug": "copa-do-brasil-2026",
+              "slug_editorial": "",
+              "odf_code": "",
+              "tipo_competicao": "J",
+              "localizacao": "Brasil",
+              "regulamento": "A competição é disputada no sistema mata-mata com 126 equipes, sendo que 28 entram na primeira fase, 74 na segunda fase, 4 na terceira fase e os times da Série A entram diretamente na quinta fase. Os confrontos da 1ª, 2ª, 3ª, 4ª fases e final são disputadas em jogo único. Nestes duelos, em caso de empate, a vaga será decidida nos pênaltis. Entre a quinta fase e a semifinal, os confrontos são sempre em jogos de ida e volta. Em caso de igualdade na pontuação após dois confrontos, são critérios de desempate: 1) saldo de gols, 2) disputa de pênaltis."
+            }
+          }
+        },
+        "paginacao": {}
+      }
+order: 1497516194003863
+name: copa-do-brasil

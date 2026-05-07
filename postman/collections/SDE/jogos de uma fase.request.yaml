@@ -1,0 +1,7 @@
+$kind: http-request
+name: jogos de uma fase
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/campeonato-brasileiro/edicoes/brasileirao2011/fases/fase-unica/jogos
+method: GET
+headers:
+  token: "{{sde_token}}"
+order: 7308

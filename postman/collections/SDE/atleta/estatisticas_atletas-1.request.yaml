@@ -1,0 +1,11 @@
+$kind: http-request
+name: estatisticas_atletas
+url: https://api.sde.globoi.com/jogos/352075/estatisticas/atletas?atleta_ids=115914&scout_tipo_siglas=ZG%2CPV%2CPE%2CX5%2CRB%2CPC%2CFC%2CZB%2CCA%2CCV
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  atleta_ids: "115914"
+  scout_tipo_siglas: ZG%2CPV%2CPE%2CX5%2CRB%2CPC%2CFC%2CZB%2CCA%2CCV
+examples: ./.resources/estatisticas_atletas-1.resources/examples
+order: 4309479683342624

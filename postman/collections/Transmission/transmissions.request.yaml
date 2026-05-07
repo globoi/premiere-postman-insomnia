@@ -1,0 +1,5 @@
+$kind: http-request
+name: transmissions
+url: https://transmissions-gcp-prod.apps.tsuru.gcp.i.globo/transmissions
+method: GET
+order: 1622089321766823

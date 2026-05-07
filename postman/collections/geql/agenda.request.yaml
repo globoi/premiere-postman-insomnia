@@ -1,4 +1,5 @@
 $kind: graphql-request
+name: agenda
 url: "{{geql_url}}/graphql"
 query: |-
   query premiereAgenda ($date: Date!){
@@ -75,4 +76,6 @@ variables: |-
   {
     "date": "2026-04-03"
   }
+schema:
+  source: auto
 order: 6000

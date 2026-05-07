@@ -1,26 +1,48 @@
 $kind: graphql-request
+name: query pastAndFutureMatches
 url: "{{geql_url}}/graphql"
 query: |
   query pastAndFutureMatches($days: Int!) {
-    pastAndFutureMatches(days: $days) {
-      FutureMatches {
-        id
-        startDate
-        startHour
-        weather { tempMinC tempMaxC tempC summary }
-        homeTeam {
-          id
-        }
-        championship {
-          currentEdition {
+      pastAndFutureMatches(days: $days) {
+          PastMatches {
               id
+              startDate
+              startHour
+              championship {
+                  currentEdition {
+                      id
+                  }
+              }
+              awayTeam {
+                  name
+              }
+              homeTeam {
+                  name
+              }
           }
-        }
+
+          FutureMatches {
+              id
+              startDate
+              startHour
+              championship {
+                  currentEdition {
+                      id
+                  }
+              }
+              awayTeam {
+                  name
+              }
+              homeTeam {
+                  name
+              }
+          }
       }
-    }
   }
 variables: |-
   {
-      "days": 12
+      "days": 1
   }
+schema:
+  source: auto
 order: 2000

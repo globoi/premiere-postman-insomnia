@@ -1,0 +1,285 @@
+$kind: http-example
+request:
+  url: https://api.video.globoi.com/v1/series/:serie-id?access_token=premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
+  method: GET
+  queryParams:
+    - key: access_token
+      value: premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
+  pathVariables:
+    - key: serie-id
+      value: htjdLKSwFN
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Thu, 07 May 2026 00:52:55 GMT
+    - key: content-type
+      value: application/json; charset=utf-8
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding
+    - key: x-frame-options
+      value: SAMEORIGIN
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: cache-control
+      value: max-age=300, public
+    - key: etag
+      value: W/"eeb2bcfa9ac75d85f8a85b8557a15afe"
+    - key: x-request-id
+      value: cb395fd379402f7599983bbf9c5bc4aa
+    - key: x-runtime
+      value: "0.029928"
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: >-
+      {
+        "id": "htjdLKSwFN",
+        "title": "Brasileirão no Premiere",
+        "original_title": null,
+        "description": "A bola não para! Confira os confrontos do Brasileirão no Premiere. ",
+        "release_year": 2026,
+        "metadata_type": "serie",
+        "content_rating": null,
+        "content_rating_criteria": [],
+        "self_rated": true,
+        "origin_program_id": 29918,
+        "origin_channel_id": 2116,
+        "origin_channel_name": "Premiere OTT",
+        "countries": [],
+        "hits_last_day": 1799,
+        "tags": [
+          "Athletico-PR",
+          "Bahia",
+          "Brasileirão",
+          "Brasileirão 2026",
+          "Campeonato Brasileiro",
+          "Futebol",
+          "Futebol Nacional",
+          "Premiere",
+          "Atlético-Mg",
+          "Chapecoense",
+          "Clube Atlético Mineiro",
+          "Galo",
+          "Bragantino",
+          "Bragança Paulista - SP",
+          "Flamengo",
+          "Coritiba",
+          "Couto Pereira",
+          "Fluminense",
+          "Fluminense Football Club",
+          "Club de Regatas Vasco da Gama",
+          "Vasco",
+          "Cruzeiro",
+          "Morumbi",
+          "São Paulo",
+          "Remo",
+          "Santos",
+          "Vitória"
+        ],
+        "subset": "sports",
+        "media_kit_id": "697a67b3b69746000155ddee",
+        "format": "series",
+        "genres": [
+          "53346df2dd23814b50000fd4"
+        ],
+        "genres_names": [
+          "Esporte"
+        ],
+        "recommendation_group": "intermediate",
+        "recommendation_publisher": "webmedia-globoplay-intermediate",
+        "product": 1,
+        "protected_by_drm": false,
+        "url_for_consumption": "https://globoplay.globo.com/brasileirao-no-premiere/t/htjdLKSwFN",
+        "availability_rules": [
+          "ALLOW_BR"
+        ],
+        "exclusive_content": false,
+        "original_content": false,
+        "content_distributors": [],
+        "content_producers": [],
+        "adult_content": false,
+        "cast": [],
+        "cast_names": [],
+        "characters": [],
+        "character_names": [],
+        "moods": [],
+        "mood_names": [],
+        "directors": [],
+        "director_names": [],
+        "authors": [],
+        "author_names": [],
+        "screenwriters": [],
+        "screenwriter_names": [],
+        "art_directors": [],
+        "art_director_names": [],
+        "ad_unit": null,
+        "ad_custom_data": null,
+        "released_at": "2026-01-28T19:00:00-03:00",
+        "last_released_at": "2026-05-03T20:00:00-03:00",
+        "service_id": 6661,
+        "media_right_ids": [
+          "premiere-play-ott"
+        ],
+        "created_at": "2026-02-10T15:28:15-03:00",
+        "updated_at": "2026-05-04T10:55:03-03:00",
+        "archived": false,
+        "last_episode_released_at": "2026-05-03T20:00:00-03:00",
+        "affiliate_code": null,
+        "structure": {
+          "type": "seasoned",
+          "seasons": [
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 1,
+              "id": "ZTMJ2hS17V"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 2,
+              "id": "qHsH8S15nG"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 3,
+              "id": "ZfJH8pvKDS"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 4,
+              "id": "mrC18NLBdg"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 5,
+              "id": "g6gvqSnznc"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 6,
+              "id": "8FL1QgtzYJ"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 7,
+              "id": "2kHMZczpJm"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 8,
+              "id": "zgWdcRsfzg"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 9,
+              "id": "gnKnW5Jw5S"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 10,
+              "id": "2RfRYSW7gq"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 11,
+              "id": "wmNjjyqhHV"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 12,
+              "id": "J9CJ1wN6Ct"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 13,
+              "id": "dYKMwXcxjH"
+            },
+            {
+              "service_id": 6661,
+              "media_right_ids": [
+                "premiere-play-ott"
+              ],
+              "number": 14,
+              "id": "h8NSFYcVgK"
+            }
+          ]
+        },
+        "technical_specs_metadata": {
+          "video_aspect_ratio": "16:9",
+          "video_orientation": "horizontal",
+          "video_widths": [
+            640,
+            1280,
+            854
+          ],
+          "video_heights": [
+            360,
+            720,
+            480
+          ],
+          "video_coding_formats": [
+            "h264"
+          ],
+          "video_color_depths": [
+            "sdr"
+          ],
+          "audio_layouts": [
+            "stereo"
+          ],
+          "audio_languages": [
+            "por"
+          ],
+          "subtitle_languages": [],
+          "audio_description_languages": [],
+          "closed_caption_languages": []
+        }
+      }
+order: 1778115927695
+name: htjdLKSwFN

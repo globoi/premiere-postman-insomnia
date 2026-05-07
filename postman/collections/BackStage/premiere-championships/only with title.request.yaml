@@ -1,0 +1,12 @@
+$kind: http-request
+name: only with title
+url: "{{BACKSTAGE_BASE_URL}}/premiere-championships/premiere?filter[perpage]=100&filter[where][and][0][titleId][exists]=true&filter[where][and][1][titleId][neq]="
+method: GET
+queryParams:
+  - key: filter[perpage]
+    value: "100"
+  - key: filter[where][and][0][titleId][exists]
+    value: "true"
+  - key: filter[where][and][1][titleId][neq]
+    value: ""
+order: 54668240618459

@@ -1,4 +1,5 @@
 $kind: graphql-request
+name: query premiereAthleteMatchStats (old)
 url: "{{geql_url}}/graphql"
 query: |
   query premiereAthleteMatchStats($filter: PremiereAthleteMatchStatsFilter!) {
@@ -42,4 +43,6 @@ variables: |-
           "matchId": 346200
       }
   }
+schema:
+  source: auto
 order: 5000

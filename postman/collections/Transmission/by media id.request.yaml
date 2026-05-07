@@ -1,0 +1,7 @@
+$kind: http-request
+name: by media id
+url: https://transmissions-gcp-prod.apps.tsuru.gcp.i.globo/transmissions?mediaID=11134179
+method: GET
+queryParams:
+  mediaID: "11134179"
+order: 1776092676597

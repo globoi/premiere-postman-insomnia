@@ -1,8 +1,11 @@
 $kind: http-request
+name: by id
 url: https://api.sde.globoi.com/atletas/:athleteID
 method: GET
 headers:
   token: "{{sde_token}}"
 pathVariables:
-  athleteID: "99552"
-order: 6000
+  - key: athleteID
+    value: "100976"
+    $type: ""
+order: 1777042412745

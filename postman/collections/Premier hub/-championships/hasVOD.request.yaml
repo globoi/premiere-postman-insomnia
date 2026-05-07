@@ -1,0 +1,11 @@
+$kind: http-request
+name: hasVOD
+url: "{{base_url}}/v1/championships?hasVOD=true"
+method: GET
+headers:
+  Client-ID: PREMIERE
+queryParams:
+  - key: hasVOD
+    value: "true"
+    $type: ""
+order: 1776970344213

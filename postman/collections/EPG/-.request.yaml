@@ -1,0 +1,7 @@
+$kind: http-request
+name: .
+url: https://epg-api.video.globo.com/v2/programmes/5448?date=2026-04
+method: GET
+queryParams:
+  date: 2026-04
+order: 1776173701862

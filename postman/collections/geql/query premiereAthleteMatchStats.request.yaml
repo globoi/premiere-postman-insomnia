@@ -1,56 +1,63 @@
 $kind: graphql-request
+name: query premiereAthleteMatchStats
 url: "{{geql_url}}/graphql"
 query: |-
-  query premiereAthleteMatchStats($filter: PremiereAthleteMatchStatsFilter!) {
-    premiereAthleteMatchStats(filter: $filter) {
-      athleteId
-      matchId
-      athlete {
-        name
-        nationality {
-          name
-        }
-        birthday
-        age
-        weigth
-        heigth
-        position {
-          description
-        }
-        popularName
-        photoURL(filter: {size: x220})
-      }
-      matchAthlete {
-        contextualPhoto(filter: {kind: HIGHLIGHT}) {
-            url
+  query GetPlayerStatisticsByMatchId($filter: PremiereAthleteMatchStatsFilter!) {
+      premiereAthleteMatchStats(filter: $filter) {
+          athleteId
+          matchId
+          athlete {
+              name
+              nationality {
+                  name
+              }
+              birthday
+              age
+              weigth
+              heigth
+              position {
+                  description
+              }
+              popularName
+              photoURL(filter: {size: x220})
           }
-          shirtNumber
+          matchAthlete {
+              shirtNumber
+              contextualPhoto(filter: {kind: HIGHLIGHT}) {
+                  url
+              }
+          }
+          team {
+              popularName
+              colors {
+                  primary
+              }
+              name
+              badge(format: "30x30")
+          }
+          championshipSummary(limit: 2) {
+              name
+              key
+              value
+          }
+          segmentedStats {
+              sectionName
+              stats {
+                  name
+                  key
+                  value
+              }
+          }
       }
-      team {
-        name
-        badge(format: "30x30")
-      }
-      championshipSummary(limit: 2) {
-        name
-        key
-        value
-      }
-      segmentedStats {
-        sectionName
-        stats {
-          name
-          key
-          value
-        }
-      }
-    }
   }
 variables: |-
   {
       "filter": {
-          "athleteId": 42135,
-          "matchId": 346484
+          "athleteId": 94583,
+          "matchId": 352075
       }
   }
-examples: ./.resources/query premiereAthleteMatchStats.resources/examples
+schema:
+  source: auto
+examples: .resources/query premiereAthleteMatchStats.resources/examples
 order: 3000

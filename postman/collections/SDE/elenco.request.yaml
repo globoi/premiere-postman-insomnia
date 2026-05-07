@@ -1,0 +1,9 @@
+$kind: http-request
+name: elenco
+url: https://api.sde.globoi.com/equipes/:equipeId/elenco
+method: GET
+headers:
+  token: "{{sde_token}}"
+pathVariables:
+  equipeId: "263"
+order: 6304

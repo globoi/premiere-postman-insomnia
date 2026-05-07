@@ -1,0 +1,688 @@
+$kind: http-example
+request:
+  url: https://api.video.globoi.com/v1/series/:serie-id/seasons/:season_id/episodes.json?access_token=premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
+  method: GET
+  queryParams:
+    - key: access_token
+      value: premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
+  pathVariables:
+    - key: serie-id
+      value: htjdLKSwFN
+    - key: season_id
+      value: ZTMJ2hS17V
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Thu, 07 May 2026 13:31:42 GMT
+    - key: content-type
+      value: application/json; charset=utf-8
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding
+    - key: x-frame-options
+      value: SAMEORIGIN
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: cache-control
+      value: max-age=300, public
+    - key: etag
+      value: W/"763d1e480e3a30b0b4865c0a809bf3f6"
+    - key: x-request-id
+      value: 9542fd59107b50b287f006b1f15fa222
+    - key: x-runtime
+      value: "0.047060"
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: >-
+      [
+        {
+          "id": "ttrW72bygS",
+          "number": 1,
+          "title": "Série A - 1ª Rodada: Atlético-MG x Palmeiras",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Atlético-MG x Palmeiras pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-28T19:00:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": null,
+          "created_at": "2026-02-11T15:06:57-03:00",
+          "updated_at": "2026-04-06T14:43:11-03:00",
+          "verify_content_rating": true,
+          "playback_data": {
+            "video_id": 14296936,
+            "duration": 3221385,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "1rLr12SryD",
+          "number": 2,
+          "title": "Série A - 1ª Rodada: Fluminense x Grêmio",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Fluminense x Grêmio pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-28T19:30:23-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:07:22-03:00",
+          "updated_at": "2026-04-06T14:43:11-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14296972,
+            "duration": 3235399,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "smwwFLn9yM",
+          "number": 3,
+          "title": "Série A - 1ª Rodada: Chapecoense x Santos",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Chapecoense x Santos pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-28T20:00:23-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:07:58-03:00",
+          "updated_at": "2026-04-06T14:43:11-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14296995,
+            "duration": 3333964,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "TY9twQxy2f",
+          "number": 4,
+          "title": "Série A - 1ª Rodada: Internacional x Athletico-PR",
+          "original_title": null,
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Internacional x Athletico-PR pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-28T19:00:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:08:31-03:00",
+          "updated_at": "2026-04-06T14:43:10-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14296996,
+            "duration": 3287184,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "p8j1Xt75XP",
+          "number": 5,
+          "title": "Série A - 1ª Rodada: São Paulo x Flamengo",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo São Paulo x Flamengo pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-28T21:30:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:08:59-03:00",
+          "updated_at": "2026-04-06T14:43:10-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14297048,
+            "duration": 3213777,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              1280,
+              1920,
+              854
+            ],
+            "video_heights": [
+              360,
+              720,
+              1080,
+              480
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "1WQNQXM9LL",
+          "number": 6,
+          "title": "Série A - 1ª Rodada: Corinthians x Bahia",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Corinthians x Bahia pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-28T20:00:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:09:25-03:00",
+          "updated_at": "2026-04-06T14:43:09-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14297051,
+            "duration": 3250214,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "sYcBnNLFgV",
+          "number": 7,
+          "title": "Série A - 1ª Rodada: Coritiba x Bragantino",
+          "original_title": null,
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Coritiba x Bragantino pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-29T10:30:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:09:54-03:00",
+          "updated_at": "2026-04-06T14:43:09-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14297638,
+            "duration": 3216346,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "Hk6fGTNrB9",
+          "number": 8,
+          "title": "Série A - 1ª Rodada: Vitória x Remo",
+          "original_title": null,
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Vitória x Remo pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-29T10:30:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:10:22-03:00",
+          "updated_at": "2026-04-06T14:43:08-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14297839,
+            "duration": 3068666,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "MwyLC7V6rv",
+          "number": 9,
+          "title": "Série A - 1ª Rodada: Mirassol x Vasco",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Mirassol x Vasco pela 1ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-01-29T20:00:00-03:00",
+          "parent_season": "ZTMJ2hS17V",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:10:47-03:00",
+          "updated_at": "2026-04-06T14:43:07-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14300516,
+            "duration": 3260357,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              854,
+              640,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              480,
+              360,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        }
+      ]
+order: 1778161261004
+name: ZTMJ2hS17V

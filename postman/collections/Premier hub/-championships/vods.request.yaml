@@ -1,0 +1,12 @@
+$kind: http-request
+name: vods
+url: "{{base_url}}/v1/championships/:championship/phases/:phase/medias"
+method: GET
+headers:
+  Client-ID: PREMIERE
+pathVariables:
+  - key: championship
+    value: campeonato-brasileiro
+  - key: phase
+    value: round-1
+order: 3905925230742759

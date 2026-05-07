@@ -1,0 +1,222 @@
+$kind: graphql-example
+name: query premiereAthleteMatchStats
+auth:
+  type: noauth
+request:
+  url: "{{geql_url}}/graphql"
+  query: |-
+    query premiereAthleteMatchStats($filter: PremiereAthleteMatchStatsFilter!) {
+      premiereAthleteMatchStats(filter: $filter) {
+        athleteId
+        matchId
+        athlete {
+          name
+          nationality {
+            name
+          }
+          birthday
+          age
+          weigth
+          heigth
+          position {
+            description
+          }
+          popularName
+          photoURL(filter: {size: x220})
+        }
+        matchAthlete {
+          contextualPhoto(filter: {kind: HIGHLIGHT}) {
+              url
+            }
+            shirtNumber
+        }
+        team {
+          name
+          badge(format: "30x30")
+        }
+        championshipSummary(limit: 2) {
+          name
+          key
+          value
+        }
+        segmentedStats {
+          sectionName
+          stats {
+            name
+            key
+            value
+          }
+        }
+      }
+    }
+  variables: |-
+    {
+        "filter": {
+            "athleteId": 94583,
+            "matchId": 352075
+        }
+    }
+  operationType: query
+  operationName: premiereAthleteMatchStats
+response:
+  events:
+    - id: 8d32ad3a-8c9e-48b1-be84-9a40ceee531f
+      type: received-response
+      content: |-
+        {
+            "data": {
+                "premiereAthleteMatchStats": {
+                    "athleteId": 94583,
+                    "matchId": 352075,
+                    "athlete": {
+                        "name": "Pedro Guilherme Abreu dos Santos",
+                        "nationality": {
+                            "name": ""
+                        },
+                        "birthday": "1997-06-20",
+                        "age": 28,
+                        "weigth": "",
+                        "heigth": "1.85",
+                        "position": {
+                            "description": "Atacante"
+                        },
+                        "popularName": "Pedro",
+                        "photoURL": "https://s.sde.globo.com/media/person_role/2025/04/07/photo_220x220_HDrmWym.png"
+                    },
+                    "matchAthlete": {
+                        "contextualPhoto": {
+                            "url": "https://s.sde.globo.com/media/person_contract/2025/09/24/photo_spotlight.png"
+                        },
+                        "shirtNumber": "9"
+                    },
+                    "team": {
+                        "name": "Clube de Regatas do Flamengo",
+                        "badge": "https://s.sde.globo.com/media/organizations/2018/04/09/Flamengo-30.png"
+                    },
+                    "championshipSummary": [
+                        {
+                            "name": "Cartão Amarelo",
+                            "key": "CA",
+                            "value": 0
+                        },
+                        {
+                            "name": "Cartão Vermelho",
+                            "key": "CV",
+                            "value": 0
+                        }
+                    ],
+                    "segmentedStats": [
+                        {
+                            "sectionName": "Ataque",
+                            "stats": [
+                                {
+                                    "name": "Finalizações Bloqueada",
+                                    "key": "ZB",
+                                    "value": 1
+                                },
+                                {
+                                    "name": "Finalizações Gol",
+                                    "key": "ZG",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "sectionName": "Distribuição de jogo",
+                            "stats": [
+                                {
+                                    "name": "Passe Errado",
+                                    "key": "PE",
+                                    "value": 11
+                                },
+                                {
+                                    "name": "Finalização/Cobrança falta/Gol",
+                                    "key": "X5",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "Passe completo",
+                                    "key": "PV",
+                                    "value": 19
+                                }
+                            ]
+                        },
+                        {
+                            "sectionName": "Defesa",
+                            "stats": [
+                                {
+                                    "name": "Pênalti cometido",
+                                    "key": "PC",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "Roubada de Bola",
+                                    "key": "RB",
+                                    "value": 0
+                                }
+                            ]
+                        },
+                        {
+                            "sectionName": "Disciplina",
+                            "stats": [
+                                {
+                                    "name": "Falta Cometida",
+                                    "key": "FC",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "Cartão Amarelo",
+                                    "key": "CA",
+                                    "value": 0
+                                },
+                                {
+                                    "name": "Cartão Vermelho",
+                                    "key": "CV",
+                                    "value": 0
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "extensions": {
+                "cacheControl": {
+                    "version": 1,
+                    "hints": [
+                        {
+                            "path": [
+                                "premiereAthleteMatchStats"
+                            ],
+                            "maxAge": 180,
+                            "scope": "PUBLIC"
+                        }
+                    ]
+                }
+            }
+        }
+  http:
+    status: 200 OK
+    headers:
+      date: Fri, 24 Apr 2026 17:39:04 GMT
+      content-type: application/json
+      content-length: "750"
+      connection: keep-alive
+      keep-alive: timeout=10
+      content-encoding: gzip
+      vary: Accept-Encoding
+      x-served-from: geql-rpaas
+      x-cache-status: MISS
+      x-frame-options: deny
+      x-xss-protection: 1; mode=block
+      x-content-type-options: nosniff
+      access-control-allow-origin: "0"
+      access-control-allow-methods: GET, POST, OPTIONS
+      access-control-allow-credentials: "true"
+      access-control-allow-headers: Origin,Content-Type,Accept,Authorization,apollographql-client-name,apollographql-client-version
+      expires: Fri, 24 Apr 2026 17:39:34 GMT
+      cache-control: max-age=30
+      x-request-id: 77d7c46b28ce74393c56a3c2111c88d8
+    body: '{"data":{"premiereAthleteMatchStats":{"athleteId":94583,"matchId":352075,"athlete":{"name":"Pedro Guilherme Abreu dos Santos","nationality":{"name":""},"birthday":"1997-06-20","age":28,"weigth":"","heigth":"1.85","position":{"description":"Atacante"},"popularName":"Pedro","photoURL":"https://s.sde.globo.com/media/person_role/2025/04/07/photo_220x220_HDrmWym.png"},"matchAthlete":{"contextualPhoto":{"url":"https://s.sde.globo.com/media/person_contract/2025/09/24/photo_spotlight.png"},"shirtNumber":"9"},"team":{"name":"Clube de Regatas do Flamengo","badge":"https://s.sde.globo.com/media/organizations/2018/04/09/Flamengo-30.png"},"championshipSummary":[{"name":"Cartão Amarelo","key":"CA","value":0},{"name":"Cartão Vermelho","key":"CV","value":0}],"segmentedStats":[{"sectionName":"Ataque","stats":[{"name":"Finalizações Bloqueada","key":"ZB","value":1},{"name":"Finalizações Gol","key":"ZG","value":1}]},{"sectionName":"Distribuição de jogo","stats":[{"name":"Passe Errado","key":"PE","value":11},{"name":"Finalização/Cobrança falta/Gol","key":"X5","value":0},{"name":"Passe completo","key":"PV","value":19}]},{"sectionName":"Defesa","stats":[{"name":"Pênalti cometido","key":"PC","value":0},{"name":"Roubada de Bola","key":"RB","value":0}]},{"sectionName":"Disciplina","stats":[{"name":"Falta Cometida","key":"FC","value":0},{"name":"Cartão Amarelo","key":"CA","value":0},{"name":"Cartão Vermelho","key":"CV","value":0}]}]}},"extensions":{"cacheControl":{"version":1,"hints":[{"path":["premiereAthleteMatchStats"],"maxAge":180,"scope":"PUBLIC"}]}}}'
+schema:
+  source: auto
+order: 2659501352157593

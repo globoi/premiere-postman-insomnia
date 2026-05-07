@@ -1,0 +1,10 @@
+$kind: http-request
+name: edicoes
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes
+method: GET
+headers:
+  token: "{{sde_token}}"
+pathVariables:
+  campeonato: copa-do-brasil
+examples: .resources/edicoes.resources/examples
+order: 1566485306545

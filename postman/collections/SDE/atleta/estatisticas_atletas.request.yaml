@@ -1,0 +1,17 @@
+$kind: http-request
+name: estatisticas_atletas
+url: https://api.sde.globoi.com/jogos/:jogoId/estatisticas/atletas?scout_tipo_siglas=PB
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  - key: atleta_ids
+    value: "94583"
+    disabled: true
+  - key: scout_tipo_siglas
+    value: PB
+pathVariables:
+  - key: jogoId
+    value: "352075"
+examples: ./.resources/estatisticas_atletas.resources/examples
+order: 4179986036507761

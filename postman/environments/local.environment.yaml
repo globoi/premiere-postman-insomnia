@@ -2,16 +2,11 @@ name: local
 values:
   - key: base_url
     value: 'http://127.0.0.1:8888'
-    enabled: true
   - key: auth_token
     value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfaWQiOiJQUkVNSUVSRSIsIm5hbWUiOiJwcmVtaWVyZSIsImV4cCI6MTc3MTEwNTY4OSwiaWF0IjoxNzcxMDE5Mjg5fQ.Zm-6DegCky0whcO_D0c8tWyY2dAH_sfsvVjCaleiR_o
-    enabled: true
   - key: geql_url
     value: 'http://127.0.0.1:8888'
-    enabled: true
   - key: auth_token_backstage
     value: ''
-    enabled: true
   - key: soccer-flask
     value: ''
-    enabled: true

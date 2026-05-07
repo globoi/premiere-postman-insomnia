@@ -1,0 +1,10 @@
+$kind: http-request
+name: active
+url: "{{base_url}}/v1/championships?active=true"
+method: GET
+headers:
+  Client-ID: PREMIERE
+queryParams:
+  - key: active
+    value: "true"
+order: 2358273289675453

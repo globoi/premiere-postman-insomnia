@@ -1,0 +1,106 @@
+$kind: http-example
+request:
+  url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes/:edicao/fases/:fase/rodadas
+  method: GET
+  headers:
+    - key: token
+      value: "{{sde_token}}"
+  pathVariables:
+    - key: campeonato
+      value: campeonato-brasileiro
+    - key: edicao
+      value: campeonato-brasileiro-2026
+    - key: fase
+      value: fase-unica-campeonato-brasileiro-2026
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Wed, 29 Apr 2026 19:33:48 GMT
+    - key: content-type
+      value: application/json
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding
+    - key: cache-control
+      value: max-age=30
+    - key: etag
+      value: W/"f4c8732e68781128bb4a77724b5683b5237a1776"
+    - key: x-request-id
+      value: 5652c9e7fb535959f3390a6f12088b49
+    - key: x-served-from
+      value: sdeapi-rpaas
+    - key: x-cache-status
+      value: HIT
+    - key: x-frame-options
+      value: deny
+    - key: x-xss-protection
+      value: 1; mode=block
+    - key: x-content-type-options
+      value: nosniff
+    - key: access-control-allow-origin
+      value: "0"
+    - key: access-control-allow-methods
+      value: DELETE, PUT, PATCH, POST, GET, OPTIONS
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-allow-headers
+      value: Origin,Content-Type,Accept,Authorization,apollographql-client-name,apollographql-client-version
+    - key: x-location
+      value: SDE-Lista_rodadas_por_fase
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: |-
+      {
+        "resultados": {
+          "rodadas": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "rodada_atual": 14
+        }
+      }
+order: 1777491230356
+name: campeonato-brasileiro
