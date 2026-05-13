@@ -3,30 +3,53 @@ request:
   url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   &variables={"filtersInput":{"affiliateCode":"RJ"}}
   method: GET
   headers:
-    x-platform-id: back-end
-    x-device-id: undefined
-    x-client-version: premiere
+    - key: x-platform-id
+      value: back-end
+    - key: x-device-id
+      value: undefined
+    - key: x-client-version
+      value: premiere
   queryParams:
-    query: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   "
-    variables: '{"filtersInput":{"affiliateCode":"RJ"}}'
+    - key: query
+      value: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadca\
+        sts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId\
+        %20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20he\
+        adline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20\
+        %7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limi\
+        t%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20\
+        %7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%\
+        7D%20%7D   "
+    - key: variables
+      value: '{"filtersInput":{"affiliateCode":"RJ"}}'
 response:
   statusCode: 200
   statusText: OK
   headers:
-    date: Wed, 13 May 2026 00:41:18 GMT
-    content-type: application/json; charset=utf-8
-    transfer-encoding: chunked
-    connection: keep-alive
-    vary: Accept-Encoding, x-tenant-id, x-country-code, x-profile-type
-    access-control-allow-origin: "*"
-    cache-control: max-age=300, public
-    etag: W/"637b-jTumL/DpCF9amDu0KUAa5+ZKT2Y"
-    x-request-id: 246bbed508fd3cbc42ad16ae72270e6d
-    x-cache-be: MISS
-    content-encoding: gzip
+    - key: date
+      value: Wed, 13 May 2026 00:26:28 GMT
+    - key: content-type
+      value: application/json; charset=utf-8
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding, x-tenant-id, x-country-code, x-profile-type
+    - key: access-control-allow-origin
+      value: "*"
+    - key: cache-control
+      value: max-age=300, public
+    - key: etag
+      value: W/"6091-sR0R6A8g5JqJACAUSFlkaU0EOA0"
+    - key: x-request-id
+      value: 055522c833718bd9077de1cbd61c7a6e
+    - key: x-cache-be
+      value: MISS
+    - key: content-encoding
+      value: gzip
   body:
     type: json
-    content: |-
+    content: >-
       {
         "data": {
           "broadcasts": [
@@ -228,8 +251,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Copa Do Brasil De Futebol",
-                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "name": "Pré-Jogo",
+                  "description": "É hora de analisar. Você confere as últimas informações, escalações, análises táticas, destaques individuais e o clima dentro e fora de campo.",
                   "relatedEvent": null
                 }
               ]
@@ -268,8 +291,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "GloboNews Debate",
-                  "description": "GloboNews Debate promove discussões sobre temas de repercussão. Convidados com visões distintas falam sobre política, economia, segurança e comportamento.",
+                  "name": "GloboNews Em Pauta",
+                  "description": "Marcelo Cosme comanda um time diverso para analisar os fatos do dia e debater os impactos da notícia na sua vida. ",
                   "relatedEvent": null
                 }
               ]
@@ -308,8 +331,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Vai Que Cola",
-                  "description": "Valdo foge dos moradores do Méier devido à infeliz declaração que deu na mídia e agora precisará de um disfarce para sair na rua sem apanhar. Elza, mãe de Valdo, vem do Leblon como corretora tentar negociar os imóveis de Terezinha, claramente tem intenção de passar a perna nela. Disfarçado de Wanda, a corretora que ama o Méier, Valdo precisa salvar Terezinha e Pasquale, que estão prestes a cair no papo de falsa corretora de Elza. Jéssica ainda não superou o término com Máicol e está na fossa. Quando ela percebe que Velna está com um novo date, Pasquale, decide disputar o boy com a loira. Ferdinando precisa recuperar o sucesso da Quinta Gay, que teve uma recente baixa na venda de ingressos, e como agora a casa de shows pertence a Terezinha, ela ameaça vender o local caso a bilheteria não bombe. É Brito quem dá uma ideia para Ferdinando salvar a Quinta Gay.",
+                  "name": "Sessão Nostalgia - A Grande Família",
+                  "description": "Mendonça decide casar-se com a Kelly, a nova estagiária da repartição. Percebendo o interesse dela e a paixão de Mendonça, Lineu decide interferir no relacionamento do amigo.",
                   "relatedEvent": null
                 }
               ]
@@ -464,8 +487,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Vovó Tatá",
-                  "description": "Juca e Keka querem saber quem rega as flores no Brinca-Mundo. Vovó Tatá apresenta\r\nà duplinha ao Locomochuva, um trem que solta nuvens, que precisa da ajuda deles\r\npara fazer o seu serviço.",
+                  "name": "Senninha Na Pista Maluca",
+                  "description": "Senninha e seus amigos vão para o espaço à procura de uma suposta sonda espacial que Neco estava inventando, e que foi quebrada pelo Senninha.",
                   "relatedEvent": null
                 }
               ]
@@ -536,8 +559,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Law & Order: Svu",
-                  "description": "Uma família descobre que um menino está em grave perigo quando o monitor de bebê capta uma frequência clandestina.",
+                  "name": "Chicago P.D.",
+                  "description": "O assassinato de uma jovem grávida coloca a equipe em busca do culpado. Enquanto isso, Burgess deve tomar uma decisão difícil sobre Makayla.",
                   "relatedEvent": null
                 }
               ]
@@ -608,8 +631,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Blue Bloods",
-                  "description": "Danny resolve investigar um caso já encerrado da morte de um bombeiro a pedido de seu filho. Jamie salva um bebê de um incêndio, mas seu trabalho infiltrada passa a correr risco.",
+                  "name": "Rookie, The",
+                  "description": "A lua de mel de Nolan e Bailey se transforma em um pesadelo quando ela vira uma cena de crime.\r\n",
                   "relatedEvent": null
                 }
               ]
@@ -645,7 +668,7 @@ response:
                 {
                   "relatedEventId": null,
                   "name": "Maratona Festival De Cannes",
-                  "description": "Sob o céu em chamas em uma beira de estrada do litoral cearense, o Motel Destino é palco de jogos perigosos de desejo, poder e violência. Uma noite, a chegada de Heraldo transforma em definitivo o cotidiano do local.",
+                  "description": "Sofia, uma jovem atleta que, às vésperas de um campeonato de vôlei decisivo para sua carreira como esportista, descobre estar grávida. Na tensão do momento, ela só tem uma certeza: não pode virar mãe, não agora.",
                   "relatedEvent": null
                 }
               ]
@@ -680,8 +703,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Voo De Cinema",
-                  "description": "Cani vai saltar com um time de 4-way com mulheres experientes e com a equipe de freefly que vai participar das competições masculinas. Duas modalidades cada uma com seu desafio!",
+                  "name": "Ninguém Me Domina",
+                  "description": "O episódio segue Camila Fuchs, campeã de Parasurf e professora do projeto AdaptSurf, que, como personal trainer e palestrante, questiona a ideia de superação no esporte adaptado.",
                   "relatedEvent": null
                 }
               ]
@@ -716,8 +739,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Setlist",
-                  "description": "VITÃO - O QUE É AMAR",
+                  "name": "Dá Samba – A Fantástica História De Bira Presidente",
+                  "description": "Documentário em cinco episódios sobre a história do bloco carnavalesco Cacique de Ramos, tendo como fio condutor o presidente Bira.",
                   "relatedEvent": null
                 }
               ]
@@ -784,8 +807,8 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Todo Mundo É Filho De Santo",
-                  "description": "Oxóssi é o orixá da caça, das florestas e da fartura, simbolizando estratégia, proteção e sustento. É sincretizado com São Jorge ou São Sebastião, tem arco e flecha como símbolo. Seus filhos costumam ser elegantes e estratégicos.",
+                  "name": "Negros Em Foco",
+                  "description": "O agronegócio se consolidou como pilar da economia brasileira e ganhou destaque internacional. Mas qual é o espaço e a participação da população negra nesse setor estratégico?",
                   "relatedEvent": null
                 }
               ]
@@ -817,7 +840,7 @@ response:
                 {
                   "relatedEventId": null,
                   "name": "Malhação 1996",
-                  "description": "Em Malhação, Hugo se surpreende com a decisão de Joana. Magali descobre que Israel recebeu uma bolsa de estudos. Bróduei não dá atenção para Jade. Alex mente sobre Héricles.",
+                  "description": "Em Malhação, Hugo fica radiante ao saber que é o pai do bebê de Dóris e faz proposta a Joana. Alex faz pedido inusitado para Héricles e comemora a viagem do namorado. Joana toma decisão.",
                   "relatedEvent": null
                 }
               ]
@@ -880,7 +903,7 @@ response:
               "epgCurrentSlots": [
                 {
                   "relatedEventId": null,
-                  "name": "Tempero De Família",
+                  "name": "Perto Do Fogo",
                   "description": null,
                   "relatedEvent": null
                 }
@@ -1198,4 +1221,5 @@ response:
           ]
         }
       }
-order: 3724223550256524
+order: 94945227833156
+name: 2026-05-12 pre jogo

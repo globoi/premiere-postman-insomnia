@@ -8,34 +8,11 @@ query: |
               id
               startDate
               startHour
-              championship {
-                  currentEdition {
-                      id
-                  }
-              }
-              awayTeam {
-                  name
-              }
-              homeTeam {
-                  name
-              }
           }
-
           FutureMatches {
               id
               startDate
               startHour
-              championship {
-                  currentEdition {
-                      id
-                  }
-              }
-              awayTeam {
-                  name
-              }
-              homeTeam {
-                  name
-              }
           }
       }
   }

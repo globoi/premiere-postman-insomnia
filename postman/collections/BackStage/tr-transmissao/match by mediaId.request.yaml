@@ -1,30 +1,19 @@
 $kind: http-request
-name: match by mediaId
-url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][status.slug][inq]=published&filter[where][status.slug][inq]=published_draft"
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][videosTransmissao.video.identifier]=7339108&filter[where][status_transmissao]=EM_ANDAMENTO&filter[where][status.slug][inq]=published&filter[where][status.slug][inq]=published_draft&filter[where][data_realizacao][between][0]=2026-05-12&filter[where][data_realizacao][between][1]=2026-05-12"
 method: GET
 queryParams:
   - key: filter[where][videosTransmissao.video.identifier]
-    value: "14296936"
-    disabled: true
+    value: "7339108"
     description: Media ID
-    $type: ""
   - key: filter[where][status_transmissao]
     value: EM_ANDAMENTO
-    disabled: true
-    $type: ""
   - key: filter[where][status.slug][inq]
     value: published
-    $type: ""
   - key: filter[where][status.slug][inq]
     value: published_draft
-    $type: ""
   - key: filter[where][data_realizacao][between][0]
-    value: 2026-02-06
-    disabled: true
-    $type: ""
+    value: 2026-05-12
   - key: filter[where][data_realizacao][between][1]
-    value: 2026-02-06
-    disabled: true
-    $type: ""
-examples: ./.resources/match by mediaId.resources/examples
+    value: 2026-05-12
+examples: .resources/match by mediaId.resources/examples
 order: 4000

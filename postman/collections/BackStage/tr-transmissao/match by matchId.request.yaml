@@ -1,10 +1,9 @@
 $kind: http-request
-name: match by matchId
-url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][id_jogo_sde]=346380"
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][id_jogo_sde]=352072"
 method: GET
 queryParams:
   - key: filter[where][id_jogo_sde]
-    value: "346380"
+    value: "352072"
     description: Match ID
-    $type: ""
+examples: .resources/match by matchId.resources/examples
 order: 1000

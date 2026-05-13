@@ -1,0 +1,14 @@
+$kind: http-request
+name: jogos
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/:campeonato/edicoes/:edicao/fases/:fase/jogos?rodada=1
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  rodada: "1"
+pathVariables:
+  campeonato: campeonato-brasileiro
+  edicao: campeonato-brasileiro-2026
+  fase: fase-unica-campeonato-brasileiro-2026
+examples: .resources/jogos.resources/examples
+order: 4038237199789845

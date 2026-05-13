@@ -1,0 +1,10 @@
+$kind: http-request
+name: medias
+url: "{{base_url}}/v1/medias?partner=charla"
+method: GET
+headers:
+  Client-ID: PREMIERE
+queryParams:
+  - key: partner
+    value: charla
+order: 2814178541536591

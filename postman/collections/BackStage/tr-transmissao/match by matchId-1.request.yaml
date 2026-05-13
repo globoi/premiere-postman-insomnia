@@ -1,0 +1,9 @@
+$kind: http-request
+name: match by matchId
+url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][id_jogo_sde]=346380"
+method: GET
+queryParams:
+  - key: filter[where][id_jogo_sde]
+    value: "346380"
+    description: Match ID
+order: 1250

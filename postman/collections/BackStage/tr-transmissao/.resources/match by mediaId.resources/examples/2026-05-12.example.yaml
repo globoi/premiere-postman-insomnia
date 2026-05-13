@@ -1,6 +1,10 @@
 $kind: http-example
 request:
-  url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][videosTransmissao.video.identifier]=7339108&filter[where][status_transmissao]=EM_ANDAMENTO&filter[where][status.slug][inq]=published&filter[where][status.slug][inq]=published_draft&filter[where][data_realizacao][between][0]=2026-05-12&filter[where][data_realizacao][between][1]=2026-05-12"
+  url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][videosTransmissao.\
+    video.identifier]=7339108&filter[where][status_transmissao]=EM_ANDAMENTO&fi\
+    lter[where][status.slug][inq]=published&filter[where][status.slug][inq]=pub\
+    lished_draft&filter[where][data_realizacao][between][0]=2026-05-12&filter[w\
+    here][data_realizacao][between][1]=2026-05-12"
   method: GET
   queryParams:
     - key: filter[where][videosTransmissao.video.identifier]
@@ -20,24 +24,44 @@ response:
   statusCode: 200
   statusText: OK
   headers:
-    date: Wed, 13 May 2026 00:28:59 GMT
-    content-type: application/json; profile="https://apis.backstage.globoi.com/api/v2/item-schemas/tr-transmissao"
-    content-length: "733"
-    connection: keep-alive
-    link: <https://apis.backstage.globoi.com/api/v2/item-schemas/tr-transmissao>; rel="describedby"
-    x-request-id: 7124d9b690d195c57e3caa86d53129c9
-    x-served-from: Backstage APIaaS
-    organization: gglobo-apigee-hdg-prd
-    environment: backstage-prod
-    proxy-name: backstage-prod-apis
-    access-control-allow-credentials: "true"
-    access-control-allow-origin: not-allowed-origin
-    via: 1.1 google
-    x-debug-base_domain: backstage
-    x-debug-vts_key: r1:/apis-prod
-    x-debug-valid_env: "1"
-    x-debug-apigee_hostname: backstage-apigee.gcp.i.globo
-    x-debug-connection-upgrade: "'-'"
+    - key: date
+      value: Wed, 13 May 2026 00:28:59 GMT
+    - key: content-type
+      value: application/json;
+        profile="https://apis.backstage.globoi.com/api/v2/item-schemas/tr-transmissao"
+    - key: content-length
+      value: "733"
+    - key: connection
+      value: keep-alive
+    - key: link
+      value: <https://apis.backstage.globoi.com/api/v2/item-schemas/tr-transmissao>;
+        rel="describedby"
+    - key: x-request-id
+      value: 7124d9b690d195c57e3caa86d53129c9
+    - key: x-served-from
+      value: Backstage APIaaS
+    - key: organization
+      value: gglobo-apigee-hdg-prd
+    - key: environment
+      value: backstage-prod
+    - key: proxy-name
+      value: backstage-prod-apis
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-allow-origin
+      value: not-allowed-origin
+    - key: via
+      value: 1.1 google
+    - key: x-debug-base_domain
+      value: backstage
+    - key: x-debug-vts_key
+      value: r1:/apis-prod
+    - key: x-debug-valid_env
+      value: "1"
+    - key: x-debug-apigee_hostname
+      value: backstage-apigee.gcp.i.globo
+    - key: x-debug-connection-upgrade
+      value: "'-'"
   body:
     type: json
     content: |-
@@ -67,3 +91,4 @@ response:
         "tenantId": "ge"
       }
 order: 2282212057678316
+name: 2026-05-12
