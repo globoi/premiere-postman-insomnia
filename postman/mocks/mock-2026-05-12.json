@@ -1,0 +1,13 @@
+{
+  "id": "a8e2fcb3-7d4c-4e9a-9f5b-2c8a1d6e3b7f",
+  "version": 1,
+  "name": "2026-05-12 EM_ANDAMENTO",
+  "protocol": "http",
+  "port": 4501,
+  "mockSrc": "./mock-2026-05-12.js",
+  "autoRestartOnChange": true,
+  "logging": {
+    "level": "verbose",
+    "showBody": true
+  }
+}
