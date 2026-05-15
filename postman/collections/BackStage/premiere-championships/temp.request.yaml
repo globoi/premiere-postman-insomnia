@@ -1,0 +1,11 @@
+$kind: http-request
+name: temp
+url: "{{BACKSTAGE_BASE_URL}}/premiere-championships/premiere?filter[order]=position&filter[page]=1&filter[perPage]=1000&filter[where][and][0][titleId][exists]=true&filter[where][and][1][titleId][ne]="
+method: GET
+queryParams:
+  filter[order]: position
+  filter[page]: "1"
+  filter[perPage]: "1000"
+  filter[where][and][0][titleId][exists]: "true"
+  filter[where][and][1][titleId][ne]: ""
+order: 592903528294923

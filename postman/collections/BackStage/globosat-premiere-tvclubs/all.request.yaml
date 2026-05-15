@@ -1,0 +1,5 @@
+$kind: http-request
+name: all
+url: https://apis.backstage.globoi.com/api/v2/globosat-premiere-tvclubs/premiere/
+method: GET
+order: 1778867534443

@@ -1,4 +1,5 @@
 $kind: http-request
+name: episodes
 url: https://api.video.globoi.com/v1/series/:serie-id/seasons/:season_id/episodes.json?access_token=premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
 method: GET
 queryParams:
