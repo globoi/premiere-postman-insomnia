@@ -1,0 +1,13 @@
+$kind: http-request
+name: edicoes
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/edicoes?campeonato_iddsfsdfsdf=83
+method: GET
+headers:
+  token: "{{sde_token}}"
+queryParams:
+  - key: campeonato_iddsfsdfsdf
+    value: "83"
+  - key: equipe_id
+    value: "358"
+    disabled: true
+order: 5601

@@ -1,0 +1,12 @@
+$kind: http-request
+name: hasSupportedType
+url: "{{BACKSTAGE_BASE_URL}}/premiere-championships/premiere?filter[perpage]=100&filter[where][hasSupportedType]=true&filter[order]=position"
+method: GET
+queryParams:
+  - key: filter[perpage]
+    value: "100"
+  - key: filter[where][hasSupportedType]
+    value: "true"
+  - key: filter[order]
+    value: position
+order: 42671051934201

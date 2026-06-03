@@ -1,4 +1,7 @@
 $kind: http-request
+name: scout types
 url: https://api.sde.globoi.com/esportes/futebol/scout_tipos
 method: GET
+headers:
+  token: "{{sde_token}}"
 order: 10000

@@ -1,24 +1,26 @@
 $kind: graphql-request
 name: query pastAndFutureMatches
 url: "{{geql_url}}/graphql"
-query: |
+query: |-
   query pastAndFutureMatches($days: Int!) {
-      pastAndFutureMatches(days: $days) {
-          PastMatches {
-              id
-              startDate
-              startHour
-          }
-          FutureMatches {
-              id
-              startDate
-              startHour
-          }
+    pastAndFutureMatches(days: $days) {
+      PastMatches {
+        ...MatchFields
       }
+      FutureMatches {
+        ...MatchFields
+      }
+    }
+  }
+
+  fragment MatchFields on Match {
+    id
+    startDate
+    startHour
   }
 variables: |-
   {
-      "days": 1
+      "days": 3
   }
 schema:
   source: auto

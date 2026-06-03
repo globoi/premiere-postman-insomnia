@@ -1,24 +1,8 @@
 $kind: http-request
 name: New Request
-url: https://apis.esporte.globoi.com/api/v2/premiere-stats/premiere?filter[where][isEnabled]=true&filter[where][isSummaryStat]=true&filter[where][category][inq]=Goleiro&filter[where][category][inq]=Ataque&filter[where][category][inq]=Distribuição de jogo&filter[where][category][inq]=Defesa&filter[where][category][inq]=Disciplina&filter[order]=order ASC&filter[limit]=999
+url: https://apis.esporte.globoi.com/api/v2/premiere-stats/premiere?filter[where][category][eq]=Goleiro&filter[limit]=999
 method: GET
 queryParams:
-  - key: filter[where][isEnabled]
-    value: "true"
-  - key: filter[where][isSummaryStat]
-    value: "true"
-  - key: filter[where][category][inq]
-    value: Goleiro
-  - key: filter[where][category][inq]
-    value: Ataque
-  - key: filter[where][category][inq]
-    value: Distribuição de jogo
-  - key: filter[where][category][inq]
-    value: Defesa
-  - key: filter[where][category][inq]
-    value: Disciplina
-  - key: filter[order]
-    value: order ASC
-  - key: filter[limit]
-    value: "999"
+  filter[where][category][eq]: Goleiro
+  filter[limit]: "999"
 order: 1000

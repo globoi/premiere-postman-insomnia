@@ -1,10 +1,14 @@
 $kind: http-request
-url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/copa-do-brasil/edicoes/copa-do-brasil-2026/estatisticas/equipes?equipe_ids=2192&scout_tipo_siglas=DD
+name: estatisticas_equipe
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/copa-do-brasil/edicoes/copa-do-brasil-2026/estatisticas/equipes?equipe_ids=267
 method: GET
 headers:
   token: "{{sde_token}}"
 queryParams:
-  equipe_ids: "2192"
-  scout_tipo_siglas: DD
+  - key: equipe_ids
+    value: "267"
+  - key: scout_tipo_siglas
+    value: DD
+    disabled: true
 examples: ./.resources/estatisticas_equipe.resources/examples
 order: 4000

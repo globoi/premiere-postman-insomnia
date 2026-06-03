@@ -1,0 +1,23 @@
+$kind: http-request
+name: get videos navigation
+url: https://api.video.globoi.com/videos/with_navigation.json?access_token=apisportv1abcd105521a5361b6bab&tags.all=Flamengo|Futebol|melhores momentos&tags.in=Tempo Real|TR|lance_automatico&tags.nin=primeiro tempo|segundo tempo|shortz|Futebol Feminino|futebol feminino&per_page=15&order_by=published_at.desc&page=3
+method: GET
+queryParams:
+  - key: access_token
+    value: apisportv1abcd105521a5361b6bab
+  - key: tags.all
+    value: Flamengo|Futebol|melhores momentos
+  - key: tags.in
+    value: Tempo Real|TR|lance_automatico
+  - key: tags.nin
+    value: primeiro tempo|segundo tempo|shortz|Futebol Feminino|futebol feminino
+  - key: per_page
+    value: "15"
+  - key: order_by
+    value: published_at.desc
+  - key: subscriber_only
+    value: "false"
+    disabled: true
+  - key: page
+    value: "3"
+order: 345144132623410

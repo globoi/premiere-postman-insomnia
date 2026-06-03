@@ -1,0 +1,14 @@
+$kind: http-request
+name: match videos highlights
+url: "{{base_url}}/v1/matches/:match_id/videos?type=highlights&per_page=1"
+method: GET
+headers:
+  Client-ID: PREMIERE
+queryParams:
+  - key: type
+    value: highlights
+  - key: per_page
+    value: "1"
+pathVariables:
+  match_id: "352072"
+order: 4502871578154656

@@ -1,0 +1,12 @@
+$kind: http-request
+name: team videos
+url: "{{base_url}}/v1/teams/:team_id/videos?type=highlights"
+method: GET
+headers:
+  Client-ID: PREMIERE
+queryParams:
+  - key: type
+    value: highlights
+pathVariables:
+  team_id: "263"
+order: 4456009640205878

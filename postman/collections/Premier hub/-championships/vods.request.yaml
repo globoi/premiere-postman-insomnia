@@ -5,6 +5,8 @@ method: GET
 headers:
   Client-ID: PREMIERE
 pathVariables:
-  championship: campeonato-brasileiro
-  phase: round-1
+  - key: championship
+    value: campeonato-brasileiro
+  - key: phase
+    value: round-2
 order: 4255699859580242
