@@ -1,0 +1,21 @@
+$kind: graphql-request
+name: affiliateCode
+url: "{{JARVIS_URL}}/graphql"
+query: |
+  query Affiliate {
+      affiliate {
+          id
+          name
+          regionName
+          logo
+          trimmedLogo
+      }
+  }
+variables: ""
+headers:
+  x-platform-id: back-end
+  x-device-id: undefined
+  x-client-version: premiere
+schema:
+  source: auto
+order: 4481869578529139

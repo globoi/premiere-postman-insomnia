@@ -14,3 +14,5 @@ values:
     value: ''
   - key: soccer-flask
     value: ''
+  - key: JARVIS_URL
+    value: ''

@@ -1,0 +1,48 @@
+$kind: graphql-request
+name: get lives
+url: "{{JARVIS_URL}}/graphql"
+query: |
+  query Broadcasts($filtersInput: BroadcastInput) {
+      broadcasts(filtersInput: $filtersInput) {
+          mediaId
+          transmissionId
+          name
+          media {
+              description
+              title {
+                  headline
+              }
+              headline
+              thumb
+              channel {
+                  id
+              }
+              authorizationExternalIds {
+                  aeid
+                  type
+              }
+          }
+          channelId
+          slug
+          epgCurrentSlots(limit: 1) {
+              relatedEventId
+              name
+              description
+              relatedEvent {
+                  ... on SoccerMatch {
+                      id
+                      matchId
+                  }
+              }
+          }
+          affiliateCode
+      }
+  }
+variables: '{"filtersInput":{"affiliateCode":"dsafasdf"}}'
+headers:
+  x-platform-id: back-end
+  x-device-id: undefined
+  x-client-version: premiere
+schema:
+  source: auto
+order: 4169991826628422
