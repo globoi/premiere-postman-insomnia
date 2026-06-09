@@ -1,11 +1,11 @@
 $kind: http-request
 name: /
-url: "{{base_url}}/v1/championships/lives/?affiliateCode=teste"
+url: "{{base_url}}/v1/championships/lives/?affiliateCode=SP"
 method: GET
 headers:
   Client-ID: PREMIERE
 queryParams:
   - key: affiliateCode
-    value: teste
+    value: SP
 examples: .resources/-.resources/examples
 order: 5000

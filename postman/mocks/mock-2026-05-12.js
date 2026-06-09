@@ -58,16 +58,40 @@ function proxyToBackstage(req, res) {
 
 const server = http.createServer((req, res) => {
   const { method } = req;
-  const pathname = new URL(req.url, `http://${req.headers.host}`).pathname;
+  const url = new URL(req.url, `http://${req.headers.host}`);
+  const pathname = url.pathname;
+  const searchParams = url.searchParams;
 
-  // @endpoint GET /tr-transmissao/ge - BackStage match by matchId
+  // @endpoint GET /tr-transmissao/ge - BackStage match by matchId or video identifier
   if (method === "GET" && pathname === "/tr-transmissao/ge") {
+    // Check if filtering by video identifier
+    const videoIdentifierFilter = searchParams.get("filter[where][videosTransmissao.video.identifier]");
+    if (videoIdentifierFilter) {
+      return pm.mock.sendExample("postman/collections/BackStage/tr-transmissao/.resources/match by matchId.resources/examples/2026-05-12 SP EM_ANDAMENTO.example.yaml", res);
+    }
+    // Default to match ID filter
     return pm.mock.sendExample("postman/collections/BackStage/tr-transmissao/.resources/match by matchId.resources/examples/2026-05-12 EM_ANDAMENTO.example.yaml", res);
   }
 
   // @endpoint GET /graphql - Jarvis get_lives
   if (method === "GET" && pathname === "/graphql") {
-    return pm.mock.sendExample("postman/collections/Jarvis/.resources/get_lives.resources/examples/2026-05-12 pre jogo.example.yaml", res);
+    // Check for affiliateCode filter in variables parameter
+    const variablesParam = searchParams.get("variables");
+    if (variablesParam) {
+      try {
+        const variables = JSON.parse(variablesParam);
+        const affiliateCode = variables?.filtersInput?.affiliateCode;
+
+        // Route to SP-specific example
+        if (affiliateCode === "SP") {
+          return pm.mock.sendExample("postman/collections/Jarvis/.resources/get_lives.resources/examples/2026-05-12 SP EM_ANDAMENTO.example.yaml", res);
+        }
+      } catch (e) {
+        // Invalid JSON, fall through to default
+      }
+    }
+    // Default example
+    return pm.mock.sendExample("postman/collections/Jarvis/.resources/get_lives.resources/examples/2026-05-12 EM_ANDAMENTO.example.yaml", res);
   }
 
   // @endpoint GET /health

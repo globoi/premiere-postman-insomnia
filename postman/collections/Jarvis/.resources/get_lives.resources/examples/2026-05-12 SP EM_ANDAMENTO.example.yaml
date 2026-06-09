@@ -1,0 +1,1201 @@
+$kind: http-example
+request:
+  url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   &variables={"filtersInput":{"affiliateCode":"SP"}}
+  method: GET
+  headers:
+    x-platform-id: back-end
+    x-device-id: undefined
+    x-client-version: premiere
+  queryParams:
+    query: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   "
+    variables: '{"filtersInput":{"affiliateCode":"SP"}}'
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Wed, 13 May 2026 00:41:18 GMT
+    content-type: application/json; charset=utf-8
+    transfer-encoding: chunked
+    connection: keep-alive
+    vary: Accept-Encoding, x-tenant-id, x-country-code, x-profile-type
+    access-control-allow-origin: "*"
+    cache-control: max-age=300, public
+    etag: W/"637b-jTumL/DpCF9amDu0KUAa5+ZKT2Y"
+    x-request-id: 246bbed508fd3cbc42ad16ae72270e6d
+    x-cache-be: MISS
+    content-encoding: gzip
+  body:
+    type: json
+    content: |-
+      {
+        "data": {
+          "broadcasts": [
+            {
+              "mediaId": "9999001",
+              "transmissionId": 994,
+              "name": "TV Globo SP",
+              "media": {
+                "description": "Assista agora à programação ao vivo da TV Globo",
+                "title": {
+                  "headline": "Globoplay Ao Vivo"
+                },
+                "headline": "Agora na Globo",
+                "thumb": "https://s04.video.glbimg.com/x216/6120663.jpg",
+                "channel": {
+                  "id": "196"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "196",
+              "slug": "tv-globo",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Três Graças",
+                  "description": "Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. A vida dessas três mulheres, moradoras de Sâo Paulo, é cheia de desafios, mas também esperança. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339108",
+              "transmissionId": 1688,
+              "name": "sportv",
+              "media": {
+                "description": "sportv ao vivo. Fique por dentro das novidades do Canal Campeão também no Agora no sportv.com e nas nossas redes sociais: Facebook, Twitter, Instagram e Youtube.",
+                "title": {
+                  "headline": "sportv Ao Vivo"
+                },
+                "headline": "Agora no sportv",
+                "thumb": "https://s01.video.glbimg.com/x216/7339108.jpg",
+                "channel": {
+                  "id": "2108"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "sportv",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2108",
+              "slug": "sportv",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:352072",
+                  "name": "Copa Do Brasil De Futebol",
+                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "relatedEvent": {
+                    "id": "sde:352072",
+                    "matchId": "999001"
+                  }
+                }
+              ]
+            },
+            {
+              "mediaId": "7339117",
+              "transmissionId": 1689,
+              "name": "sportv 2",
+              "media": {
+                "description": "sportv 2 ao vivo. Fique por dentro das novidades do Canal Campeão também no Agora no sportv.com e nas nossas redes sociais: Facebook, Twitter, Instagram e Youtube.",
+                "title": {
+                  "headline": "sportv Ao Vivo"
+                },
+                "headline": "Agora no sportv 2",
+                "thumb": "https://s02.video.glbimg.com/x216/7339117.jpg",
+                "channel": {
+                  "id": "2108"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "sportv-2",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "degustacao-sportv2",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2108",
+              "slug": "sportv-2",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Liga Das Nações Masculina De Vôlei",
+                  "description": "Acompanhe aqui a trajetória dos gigantes da Seleção Brasileira de Vôlei em busca do bicampeonato. Tá na Liga das Nações de Vôlei, tá no sportv!",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339123",
+              "transmissionId": 1690,
+              "name": "sportv 3",
+              "media": {
+                "description": "sportv 3 ao vivo. Fique por dentro das novidades do Canal Campeão também no Agora no sportv.com e nas nossas redes sociais: Facebook, Twitter, Instagram e Youtube.",
+                "title": {
+                  "headline": "sportv Ao Vivo"
+                },
+                "headline": "Agora no sportv 3",
+                "thumb": "https://s04.video.glbimg.com/x216/7339123.jpg",
+                "channel": {
+                  "id": "2108"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "sportv-3",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2108",
+              "slug": "sportv-3",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Na Ponta Dos Dedos",
+                  "description": "Não perca o podcast focado em esportes a motor, cobrindo Fórmula 1 e categorias juniores, o programa traz entrevistas exclusivas, análises técnicas e bastidores.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "13643133",
+              "transmissionId": 5394,
+              "name": "Mosaico sportv",
+              "media": {
+                "description": "Acompanhe simultaneamente a programação ao vivo dos canais sportv, sportv 2 e sportv 3 em uma única tela.",
+                "title": {
+                  "headline": "sportv Ao Vivo"
+                },
+                "headline": "Mosaico sportv",
+                "thumb": "https://s02.video.glbimg.com/x216/13643133.jpg",
+                "channel": {
+                  "id": "2108"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2108",
+              "slug": "mosaico-sportv",
+              "epgCurrentSlots": []
+            },
+            {
+              "mediaId": "11134179",
+              "transmissionId": 4952,
+              "name": "ge tv",
+              "media": {
+                "description": "ge tv",
+                "title": {
+                  "headline": "ge tv"
+                },
+                "headline": "ge tv",
+                "thumb": "https://s04.video.glbimg.com/x216/11134179.jpg",
+                "channel": {
+                  "id": "2160"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2160",
+              "slug": "ge-tv",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Copa Do Brasil De Futebol",
+                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339101",
+              "transmissionId": 1676,
+              "name": "GloboNews",
+              "media": {
+                "description": "GloboNews ao vivo. Nunca desliga. A GloboNews é o primeiro e mais importante canal de jornalismo da TV brasileira. Momentos decisivos, fatos marcantes. Análise e repercussão. 24 horas no ar.",
+                "title": {
+                  "headline": "GloboNews Ao Vivo"
+                },
+                "headline": "Agora na GloboNews",
+                "thumb": "https://s02.video.glbimg.com/x216/7339101.jpg",
+                "channel": {
+                  "id": "2096"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "globonews-globosat",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "degustacao-globonews",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2096",
+              "slug": "globonews",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "GloboNews Debate",
+                  "description": "GloboNews Debate promove discussões sobre temas de repercussão. Convidados com visões distintas falam sobre política, economia, segurança e comportamento.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339131",
+              "transmissionId": 1679,
+              "name": "Multishow",
+              "media": {
+                "description": "Multishow 24 horas. No Multishow, o jovem se diverte com as séries, viaja para vários destinos e curte muita música, incluindo transmissões ao vivo de shows.",
+                "title": {
+                  "headline": "Multishow Ao Vivo"
+                },
+                "headline": "Agora no Multishow",
+                "thumb": "https://s04.video.glbimg.com/x216/7339131.jpg",
+                "channel": {
+                  "id": "2067"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "multishow",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "degustacao-teste",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2067",
+              "slug": "multishow",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Vai Que Cola",
+                  "description": "Valdo foge dos moradores do Méier devido à infeliz declaração que deu na mídia e agora precisará de um disfarce para sair na rua sem apanhar. Elza, mãe de Valdo, vem do Leblon como corretora tentar negociar os imóveis de Terezinha, claramente tem intenção de passar a perna nela. Disfarçado de Wanda, a corretora que ama o Méier, Valdo precisa salvar Terezinha e Pasquale, que estão prestes a cair no papo de falsa corretora de Elza. Jéssica ainda não superou o término com Máicol e está na fossa. Quando ela percebe que Velna está com um novo date, Pasquale, decide disputar o boy com a loira. Ferdinando precisa recuperar o sucesso da Quinta Gay, que teve uma recente baixa na venda de ingressos, e como agora a casa de shows pertence a Terezinha, ela ameaça vender o local caso a bilheteria não bombe. É Brito quem dá uma ideia para Ferdinando salvar a Quinta Gay.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339128",
+              "transmissionId": 1678,
+              "name": "GNT",
+              "media": {
+                "description": "GNT 24 horas. Referência entre os canais femininos, o GNT aborda temas como beleza, saúde, decoração e culinária, além das séries de ficção e dos realities shows.",
+                "title": {
+                  "headline": "GNT Ao Vivo"
+                },
+                "headline": "Agora no GNT",
+                "thumb": "https://s01.video.glbimg.com/x216/7339128.jpg",
+                "channel": {
+                  "id": "2081"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "gnt",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "degustacao-teste",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "degustacao-gnt",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2081",
+              "slug": "gnt",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Que Seja Doce",
+                  "description": "A versatilidade e o sabor do coco são os protagonistas de hoje. As confeiteiras farão doces de coco para um delicioso piquenique.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339091",
+              "transmissionId": 1675,
+              "name": "Globoplay Novelas",
+              "media": {
+                "description": "Globoplay Novelas 24 horas. Um sucesso atrás do outro. Assim é o Globoplay Novelas. Voltado para o público adulto, o canal de entretenimento reúne os programas mais queridos da TV brasileira.",
+                "title": {
+                  "headline": "Globoplay Novelas Ao Vivo"
+                },
+                "headline": "Agora no Globoplay Novelas",
+                "thumb": "https://s04.video.glbimg.com/x216/7339091.jpg",
+                "channel": {
+                  "id": "2107"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "viva",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "degustacao-globoplaynovelas",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2107",
+              "slug": "globoplay-novelas",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Minha Vida Perfeita",
+                  "description": "Sebnem cresce como aluna bolsista brilhante em meio à elite fria e cruel, tentando manter seus sonhos vivos apesar da indiferença ao redor.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339146",
+              "transmissionId": 1681,
+              "name": "Gloob",
+              "media": {
+                "description": "GLOOB 24 horas. Séries, desenhos animados e personagens incríveis. O Gloob é um mundo de diversão e inspiração para as crianças.",
+                "title": {
+                  "headline": "Gloob Ao Vivo"
+                },
+                "headline": "Agora no Gloob",
+                "thumb": "https://s03.video.glbimg.com/x216/7339146.jpg",
+                "channel": {
+                  "id": "2062"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "gloob",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2062",
+              "slug": "gloob",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Cine Gloob",
+                  "description": "Maurice é um pinguim que cresceu na floresta. Acreditando ser um tigre, o pequeno protege o local. Quando o malvado coala Igor planeja destruir a selva, Maurice e a bicharada se juntam para impedi-lo.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339323",
+              "transmissionId": 1682,
+              "name": "Gloobinho",
+              "media": {
+                "description": "Gloobinho 24 horas. Um canal de muita diversão para crianças com idade pré escolar!",
+                "title": {
+                  "headline": "Gloobinho Ao Vivo"
+                },
+                "headline": "Agora no Gloobinho",
+                "thumb": "https://s04.video.glbimg.com/x216/7339323.jpg",
+                "channel": {
+                  "id": "2109"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "gloobinho",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2109",
+              "slug": "gloobinho",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Vovó Tatá",
+                  "description": "Juca e Keka querem saber quem rega as flores no Brinca-Mundo. Vovó Tatá apresenta\r\nà duplinha ao Locomochuva, um trem que solta nuvens, que precisa da ajuda deles\r\npara fazer o seu serviço.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339152",
+              "transmissionId": 1684,
+              "name": "Megapix",
+              "media": {
+                "description": "Agora no Megapix",
+                "title": {
+                  "headline": "Megapix Ao Vivo"
+                },
+                "headline": "Agora no Megapix",
+                "thumb": "https://s01.video.glbimg.com/x216/7339152.jpg",
+                "channel": {
+                  "id": "2114"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "megapix",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2114",
+              "slug": "megapix",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Shrek 2",
+                  "description": "O pai de Fiona descobre que a filha não se casou com o príncipe a quem estava prometida. Agora, Shrek tem que lutar para provar o seu valor e recuperar a esposa.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339279",
+              "transmissionId": 1686,
+              "name": "Universal",
+              "media": {
+                "description": "Agora no Universal TV",
+                "title": {
+                  "headline": "Universal Ao Vivo"
+                },
+                "headline": "Agora no Universal TV",
+                "thumb": "https://s04.video.glbimg.com/x216/7339279.jpg",
+                "channel": {
+                  "id": "2112"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "universal-channel",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2112",
+              "slug": "universal",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Law & Order: Svu",
+                  "description": "Uma família descobre que um menino está em grave perigo quando o monitor de bebê capta uma frequência clandestina.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339326",
+              "transmissionId": 1687,
+              "name": "Studio Universal",
+              "media": {
+                "description": "Agora no Studio Universal",
+                "title": {
+                  "headline": "Studio Universal Ao Vivo"
+                },
+                "headline": "Agora no Studio Universal",
+                "thumb": "https://s03.video.glbimg.com/x216/7339326.jpg",
+                "channel": {
+                  "id": "2113"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "studio-universal",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2113",
+              "slug": "studio-universal",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Studio Movie",
+                  "description": "Com a ajuda de uma pílula que permite ao usuário acessar 100% de suas habilidades cerebrais, um escritor vira um mago das finanças, mas também conhece um mundo cheio de perigos.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339224",
+              "transmissionId": 1685,
+              "name": "USA",
+              "media": {
+                "description": "Agora no USA.",
+                "title": {
+                  "headline": "USA Ao Vivo"
+                },
+                "headline": "Agora no USA",
+                "thumb": "https://s01.video.glbimg.com/x216/7339224.jpg",
+                "channel": {
+                  "id": "2115"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "syfy",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2115",
+              "slug": "usa",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Blue Bloods",
+                  "description": "Danny resolve investigar um caso já encerrado da morte de um bombeiro a pedido de seu filho. Jamie salva um bebê de um incêndio, mas seu trabalho infiltrada passa a correr risco.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339060",
+              "transmissionId": 1663,
+              "name": "Canal Brasil",
+              "media": {
+                "description": "Canal Brasil 24 horas. Cinema, música e irreverência na sua casa. O Canal Brasil reúne o que há de melhor da cultura brasileira numa programação variada e de conteúdo 100 nacional.",
+                "title": {
+                  "headline": "Canal Brasil Ao Vivo"
+                },
+                "headline": "Agora no Canal Brasil",
+                "thumb": "https://s01.video.glbimg.com/x216/7339060.jpg",
+                "channel": {
+                  "id": "2111"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "canal-brasil",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2111",
+              "slug": "canal-brasil",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Maratona Festival De Cannes",
+                  "description": "Sob o céu em chamas em uma beira de estrada do litoral cearense, o Motel Destino é palco de jogos perigosos de desejo, poder e violência. Uma noite, a chegada de Heraldo transforma em definitivo o cotidiano do local.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339078",
+              "transmissionId": 1674,
+              "name": "Canal Off",
+              "media": {
+                "description": "Canal OFF 24 horas. No OFF, ação, aventura e natureza se unem em cenários paradisíacos, com trilhas sonoras incríveis e personagens em experiências de tirar o fôlego.",
+                "title": {
+                  "headline": "Canal OFF Ao Vivo"
+                },
+                "headline": "Agora no Canal OFF",
+                "thumb": "https://s03.video.glbimg.com/x216/7339078.jpg",
+                "channel": {
+                  "id": "2100"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "canal-off",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2100",
+              "slug": "canal-off",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Voo De Cinema",
+                  "description": "Cani vai saltar com um time de 4-way com mulheres experientes e com a equipe de freefly que vai participar das competições masculinas. Duas modalidades cada uma com seu desafio!",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339140",
+              "transmissionId": 1680,
+              "name": "Bis",
+              "media": {
+                "description": "BIS 24 horas. Com uma programação 100% voltada para música, o canal BIS tem atrações que vão do MPB ao rock, passando pelo pop, sertanejo e pagode.",
+                "title": {
+                  "headline": "BIS Ao Vivo"
+                },
+                "headline": "Agora no BIS",
+                "thumb": "https://s01.video.glbimg.com/x216/7339140.jpg",
+                "channel": {
+                  "id": "2110"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "bis",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2110",
+              "slug": "bis",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Setlist",
+                  "description": "VITÃO - O QUE É AMAR",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7339135",
+              "transmissionId": 1683,
+              "name": "Modo Viagem",
+              "media": {
+                "description": "Modo Viagem 24 horas. Experiências gastronômicas, hospedagem, cultura e guia de viagem para todos os tipos e gostos e destinos, convidando o público a planejar suas próprias rotas.",
+                "title": {
+                  "headline": "Modo Viagem Ao Vivo"
+                },
+                "headline": "Agora no Modo Viagem",
+                "thumb": "https://s04.video.glbimg.com/x216/7339135.jpg",
+                "channel": {
+                  "id": "2103"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "mais-globosat",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2103",
+              "slug": "modo-viagem",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Brasil Visto De Cima",
+                  "description": "A história do Brasil passa por Minas Gerais. Um lugar rico e abençoado, que despertou a fé e a genialidade dos artistas. Brasil Visto de Cima de hoje, sobrevoa as cidades históricas de Ouro Preto, Mariana e São João del Rei. Algumas das construções e formações urbanas mais bonitas do nosso país, vistas por um novo ângulo.\r\n",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "7420604",
+              "transmissionId": 1763,
+              "name": "Futura",
+              "media": {
+                "description": "Agora no Futura",
+                "title": {
+                  "headline": "Futura Ao Vivo"
+                },
+                "headline": "Agora no Futura",
+                "thumb": "https://s01.video.glbimg.com/x216/7420604.jpg",
+                "channel": {
+                  "id": "2118"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2118",
+              "slug": "futura",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Todo Mundo É Filho De Santo",
+                  "description": "Oxóssi é o orixá da caça, das florestas e da fartura, simbolizando estratégia, proteção e sustento. É sincretizado com São Jorge ou São Sebastião, tem arco e flecha como símbolo. Seus filhos costumam ser elegantes e estratégicos.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "12136724",
+              "transmissionId": 5107,
+              "name": "Malhação Fast",
+              "media": {
+                "description": "Malhação Fast",
+                "title": {
+                  "headline": "Malhação Fast"
+                },
+                "headline": "Malhação Fast",
+                "thumb": "https://s01.video.glbimg.com/x216/12136724.jpg",
+                "channel": {
+                  "id": "2169"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2169",
+              "slug": "malhacao-fast",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Malhação 1996",
+                  "description": "Em Malhação, Hugo se surpreende com a decisão de Joana. Magali descobre que Israel recebeu uma bolsa de estudos. Bróduei não dá atenção para Jade. Alex mente sobre Héricles.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "12136726",
+              "transmissionId": 5110,
+              "name": "DPA Fast",
+              "media": {
+                "description": "DPA Fast",
+                "title": {
+                  "headline": "D.P.A. Fast"
+                },
+                "headline": "DPA Fast",
+                "thumb": "https://s03.video.glbimg.com/x216/12136726.jpg",
+                "channel": {
+                  "id": "2170"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2170",
+              "slug": "dpa-fast",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "D.P.A.- Detetives Do Prédio Az",
+                  "description": "As coisas do Prédio estão ficando cobertas de Papel Machê! E, pra variar, a Dona Leocádia acha que foram as crianças. Os detetives precisam provar sua inocência.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "11134191",
+              "transmissionId": 4951,
+              "name": "Receitas Fast",
+              "media": {
+                "description": "Receitas Fast",
+                "title": {
+                  "headline": "Receitas Fast"
+                },
+                "headline": "Receitas Fast",
+                "thumb": "https://s04.video.glbimg.com/x216/11134191.jpg",
+                "channel": {
+                  "id": "2161"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2161",
+              "slug": "receitas-fast",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Tempero De Família",
+                  "description": null,
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "10221110",
+              "transmissionId": 4572,
+              "name": "Telecine Premium",
+              "media": {
+                "description": "O clube de cinema com filmes para todos os momentos.",
+                "title": {
+                  "headline": "Telecine Ao Vivo"
+                },
+                "headline": "Telecine Premium",
+                "thumb": "https://s03.video.glbimg.com/x216/10221110.jpg",
+                "channel": {
+                  "id": "2143"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "telecine",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2143",
+              "slug": "telecine-premium",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Hellboy (2019)",
+                  "description": "Invocado ainda criança para o mundo dos humanos, Hellboy os ajuda combatendo ameças sobrenaturais. Agora, para salvar o mundo, ele precisará derrotar a feiticeira Nimue, que voltou em busca de vingança.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "10221184",
+              "transmissionId": 4573,
+              "name": "Telecine Action",
+              "media": {
+                "description": "O clube de cinema com filmes para todos os momentos.",
+                "title": {
+                  "headline": "Telecine Ao Vivo"
+                },
+                "headline": "Telecine Action",
+                "thumb": "https://s01.video.glbimg.com/x216/10221184.jpg",
+                "channel": {
+                  "id": "2143"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "telecine",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2143",
+              "slug": "telecine-action",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Velozes & Furiosos 7",
+                  "description": "A família de Toretto é perseguida por um assassino que busca vingar a morte do irmão. Foragidos, eles precisam resgatar um gênio da computação que é alvo da gangue.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "10221239",
+              "transmissionId": 4576,
+              "name": "Telecine Touch",
+              "media": {
+                "description": "O clube de cinema com filmes para todos os momentos.",
+                "title": {
+                  "headline": "Telecine Ao Vivo"
+                },
+                "headline": "Telecine Touch",
+                "thumb": "https://s04.video.glbimg.com/x216/10221239.jpg",
+                "channel": {
+                  "id": "2143"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "telecine",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2143",
+              "slug": "telecine-touch",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "A Escolha Perfeita 3",
+                  "description": "Infelizes nos trabalhos, as ex-Barden Bellas veem a chance de reunir a equipe para uma turnê na Europa, onde terão que enfrentar talentosos grupos musicais.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "10223522",
+              "transmissionId": 4577,
+              "name": "Telecine Fun",
+              "media": {
+                "description": "O clube de cinema com filmes para todos os momentos.",
+                "title": {
+                  "headline": "Telecine Ao Vivo"
+                },
+                "headline": "Telecine Fun",
+                "thumb": "https://s03.video.glbimg.com/x216/10223522.jpg",
+                "channel": {
+                  "id": "2143"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "telecine",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2143",
+              "slug": "telecine-fun",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Minha Vida Em Marte",
+                  "description": "Fernanda está em crise no casamento: a atração diminuiu e as brigas aumentaram. Quando o divórcio acontece, Fernanda conta com seu fiel amigo Aníbal na jornada em busca de si mesma.\r\n",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "10221225",
+              "transmissionId": 4574,
+              "name": "Telecine Pipoca",
+              "media": {
+                "description": "O clube de cinema com filmes para todos os momentos.",
+                "title": {
+                  "headline": "Telecine Ao Vivo"
+                },
+                "headline": "Telecine Pipoca",
+                "thumb": "https://s02.video.glbimg.com/x216/10221225.jpg",
+                "channel": {
+                  "id": "2143"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "telecine",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2143",
+              "slug": "telecine-pipoca",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "As Tartarugas Ninja: Caos Mutante",
+                  "description": "Os quatro irmãos tartaruga contam com a ajuda de uma nova amiga, April O'Neil, para conquistar os moradores de Nova York e combater o desconhecido sindicato do crime.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "10221109",
+              "transmissionId": 4575,
+              "name": "Telecine Cult",
+              "media": {
+                "description": "O clube de cinema com filmes para todos os momentos.",
+                "title": {
+                  "headline": "Telecine Ao Vivo"
+                },
+                "headline": "Telecine Cult",
+                "thumb": "https://s02.video.glbimg.com/x216/10221109.jpg",
+                "channel": {
+                  "id": "2143"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "telecine",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2143",
+              "slug": "telecine-cult",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Saneamento Básico, O Filme",
+                  "description": "Moradores de uma pequena vila se juntam para pleitear a construção de uma estação de tratamento de esgoto. Para conseguir o dinheiro, eles precisam fazer um filme de ficção.",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "8223631",
+              "transmissionId": 2858,
+              "name": "Premiere",
+              "media": {
+                "description": "Agora no Premiere",
+                "title": {
+                  "headline": "Premiere Ao Vivo"
+                },
+                "headline": "Agora no Premiere",
+                "thumb": "https://s04.video.glbimg.com/x216/8223631.jpg",
+                "channel": {
+                  "id": "2116"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "premiere-play-ott",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "1995",
+              "slug": "premiere",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:352072",
+                  "name": "Copa Do Brasil De Futebol",
+                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "relatedEvent": {
+                    "id": "sde:352072",
+                    "matchId": "999001"
+                  }
+                }
+              ]
+            },
+            {
+              "mediaId": "8310612",
+              "transmissionId": 3041,
+              "name": "Combate",
+              "media": {
+                "description": "Lutas e eventos no Globoplay",
+                "title": {
+                  "headline": "Combate Ao Vivo"
+                },
+                "headline": "Agora no Combate",
+                "thumb": "https://s01.video.glbimg.com/x216/8310612.jpg",
+                "channel": {
+                  "id": "2117"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "combate-play-ott",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2117",
+              "slug": "combate",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Grand Slam De Judô",
+                  "description": "Veja as grandes estrelas internacionais do Judô aqui no sportv!",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "9182156",
+              "transmissionId": 4079,
+              "name": "CBN SP",
+              "media": {
+                "description": "Assista ao sinal CBN Ao Vivo SP",
+                "title": {
+                  "headline": "CBN Ao Vivo"
+                },
+                "headline": "CBN Ao Vivo SP",
+                "thumb": "https://s01.video.glbimg.com/x216/9182156.jpg",
+                "channel": {
+                  "id": "2124"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2124",
+              "slug": "cbn-sp",
+              "epgCurrentSlots": []
+            },
+            {
+              "mediaId": "9182126",
+              "transmissionId": 4078,
+              "name": "CBN RJ",
+              "media": {
+                "description": "Assista ao sinal CBN Ao Vivo RJ",
+                "title": {
+                  "headline": "CBN Ao Vivo"
+                },
+                "headline": "CBN Ao Vivo RJ",
+                "thumb": "https://s03.video.glbimg.com/x216/9182126.jpg",
+                "channel": {
+                  "id": "2124"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2124",
+              "slug": "cbn-rj",
+              "epgCurrentSlots": []
+            }
+          ]
+        }
+      }
+order: 3724223550256524
