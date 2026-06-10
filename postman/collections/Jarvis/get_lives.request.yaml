@@ -1,13 +1,13 @@
 $kind: http-request
 name: get_lives
-url: https://cloud-products-jarvis.globo.com/graphql?query=query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   &variables={"filtersInput":{"affiliateCode":"SP"}}
+url: https://cloud-products-jarvis.globo.com/graphql?query=query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broadcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmissionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D&variables={"filtersInput":{"affiliateCode":"SP"}}
 method: GET
 headers:
   x-platform-id: back-end
   x-device-id: undefined
   x-client-version: premiere
 queryParams:
-  query: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   "
+  query: "query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broadcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmissionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D"
   variables: '{"filtersInput":{"affiliateCode":"SP"}}'
 examples: .resources/get_lives.resources/examples
 order: 1432709427628029

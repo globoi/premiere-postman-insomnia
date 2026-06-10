@@ -43,6 +43,7 @@ headers:
   x-platform-id: back-end
   x-device-id: undefined
   x-client-version: premiere
+  x-tenant-id: premiere
 schema:
   source: auto
 order: 4169991826628422

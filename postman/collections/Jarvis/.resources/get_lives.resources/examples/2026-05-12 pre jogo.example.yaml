@@ -1,6 +1,6 @@
 $kind: http-example
 request:
-  url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadcasts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId%20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limit%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D   &variables={"filtersInput":{"affiliateCode":"RJ"}}
+  url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broadcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmissionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D&variables={"filtersInput":{"affiliateCode":"RJ"}}
   method: GET
   headers:
     - key: x-platform-id
@@ -11,14 +11,14 @@ request:
       value: premiere
   queryParams:
     - key: query
-      value: "query%20Broadcasts(%24filtersInput%3A%20BroadcastInput)%20%7B%20broadca\
-        sts(filtersInput%3A%20%24filtersInput)%20%7B%20mediaId%20transmissionId\
-        %20name%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20he\
-        adline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20\
-        %7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots(limi\
-        t%3A%201)%20%7B%20relatedEventId%20name%20description%20relatedEvent%20\
-        %7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%\
-        7D%20%7D   "
+      value: "query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broa\
+        dcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmi\
+        ssionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7\
+        B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20auth\
+        orizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slu\
+        g%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20d\
+        escription%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20m\
+        atchId%20%7D%20%7D%20%7D%20%7D%20%7D"
     - key: variables
       value: '{"filtersInput":{"affiliateCode":"RJ"}}'
 response:
@@ -1105,6 +1105,7 @@ response:
               "mediaId": "8223631",
               "transmissionId": 2858,
               "name": "Premiere",
+              "affiliateCode": "RJ",
               "media": {
                 "description": "Agora no Premiere",
                 "title": {
