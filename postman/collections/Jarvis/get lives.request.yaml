@@ -2,8 +2,8 @@ $kind: graphql-request
 name: get lives
 url: "{{JARVIS_URL}}/graphql"
 query: |
-  query Broadcasts($filtersInput: BroadcastInput) {
-      broadcasts(filtersInput: $filtersInput) {
+  query Broadcasts {
+      broadcasts(filtersInput: { affiliateCode: "RJ" }) {
           mediaId
           transmissionId
           name

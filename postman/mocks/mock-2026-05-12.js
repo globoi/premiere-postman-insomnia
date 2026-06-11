@@ -80,6 +80,12 @@ const server = http.createServer((req, res) => {
     if (variablesParam) {
       try {
         const variables = JSON.parse(variablesParam);
+
+        // Check if filtersInput is null
+        if (variables?.filtersInput === null) {
+          return pm.mock.sendExample("postman/collections/Jarvis/.resources/get_lives.resources/examples/2026-05-12 EM_ANDAMENTO null affiliateCode.example.yaml", res);
+        }
+
         const affiliateCode = variables?.filtersInput?.affiliateCode;
 
         // Route to SP-specific example

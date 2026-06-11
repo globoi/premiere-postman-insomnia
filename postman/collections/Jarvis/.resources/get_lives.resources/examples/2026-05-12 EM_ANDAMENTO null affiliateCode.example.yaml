@@ -1,0 +1,169 @@
+$kind: http-example
+request:
+  url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broadcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmissionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D&variables={"filtersInput":null}
+  method: GET
+  headers:
+    - key: x-platform-id
+      value: back-end
+    - key: x-device-id
+      value: undefined
+    - key: x-client-version
+      value: premiere
+  queryParams:
+    - key: query
+      value: "query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broa\
+        dcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmi\
+        ssionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7\
+        B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20auth\
+        orizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slu\
+        g%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20d\
+        escription%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20m\
+        atchId%20%7D%20%7D%20%7D%20%7D%20%7D"
+    - key: variables
+      value: '{"filtersInput":null}'
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Wed, 13 May 2026 00:41:18 GMT
+    - key: content-type
+      value: application/json; charset=utf-8
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding, x-tenant-id, x-country-code, x-profile-type
+    - key: access-control-allow-origin
+      value: "*"
+    - key: cache-control
+      value: max-age=300, public
+    - key: etag
+      value: W/"637b-jTumL/DpCF9amDu0KUAa5+ZKT2Y"
+    - key: x-request-id
+      value: 246bbed508fd3cbc42ad16ae72270e6d
+    - key: x-cache-be
+      value: MISS
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: |-
+      {
+        "data": {
+          "broadcasts": [
+            {
+              "mediaId": "7339108",
+              "transmissionId": 1688,
+              "name": "sportv",
+              "affiliateCode": null,
+              "media": {
+                "description": "sportv ao vivo. Fique por dentro das novidades do Canal Campeão também no Agora no sportv.com e nas nossas redes sociais: Facebook, Twitter, Instagram e Youtube.",
+                "title": {
+                  "headline": "sportv Ao Vivo"
+                },
+                "headline": "Agora no sportv",
+                "thumb": "https://s01.video.glbimg.com/x216/7339108.jpg",
+                "channel": {
+                  "id": "2108"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-canais",
+                    "type": "media-rights"
+                  },
+                  {
+                    "aeid": "sportv",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2108",
+              "slug": "sportv",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:352072",
+                  "name": "Copa Do Brasil De Futebol",
+                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "relatedEvent": {
+                    "id": "sde:352072",
+                    "matchId": "999001"
+                  }
+                }
+              ]
+            },
+            {
+              "mediaId": "11134179",
+              "transmissionId": 4952,
+              "name": "ge tv",
+              "affiliateCode": null,
+              "media": {
+                "description": "ge tv",
+                "title": {
+                  "headline": "ge tv"
+                },
+                "headline": "ge tv",
+                "thumb": "https://s04.video.glbimg.com/x216/11134179.jpg",
+                "channel": {
+                  "id": "2160"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "globoplay-gratuito",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "2160",
+              "slug": "ge-tv",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": null,
+                  "name": "Copa Do Brasil De Futebol",
+                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "relatedEvent": null
+                }
+              ]
+            },
+            {
+              "mediaId": "8223631",
+              "transmissionId": 2858,
+              "name": "Premiere",
+              "affiliateCode": null,
+              "media": {
+                "description": "Agora no Premiere",
+                "title": {
+                  "headline": "Premiere Ao Vivo"
+                },
+                "headline": "Agora no Premiere",
+                "thumb": "https://s04.video.glbimg.com/x216/8223631.jpg",
+                "channel": {
+                  "id": "2116"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "premiere-play-ott",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "1995",
+              "slug": "premiere",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:352072",
+                  "name": "Copa Do Brasil De Futebol",
+                  "description": "O ciclo de 2026 iniciou, os jogos com finais inesperados, com toda e emoção que a Copa do Brasil tem, Tem coisas que só acontecem na Copa do Brasil!\r\n",
+                  "relatedEvent": {
+                    "id": "sde:352072",
+                    "matchId": "999001"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+order: 3724223550256525
+name: 2026-05-12 EM_ANDAMENTO null affiliateCode
