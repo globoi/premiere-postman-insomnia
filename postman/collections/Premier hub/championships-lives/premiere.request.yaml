@@ -1,10 +1,11 @@
 $kind: http-request
-name: premiere
-url: "{{base_url}}/v1/championships/lives/premiere?affiliateCode=SP"
+url: "{{base_url}}/v1/championships/lives/premiere"
 method: GET
 headers:
   Client-ID: PREMIERE
 queryParams:
   - key: affiliateCode
     value: SP
+    disabled: true
+examples: .resources/premiere.resources/examples
 order: 2000

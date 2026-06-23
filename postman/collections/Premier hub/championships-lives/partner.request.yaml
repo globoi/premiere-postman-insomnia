@@ -3,4 +3,5 @@ url: "{{base_url}}/v1/championships/lives/partner"
 method: GET
 headers:
   Client-ID: PREMIERE
+examples: .resources/partner.resources/examples
 order: 3000

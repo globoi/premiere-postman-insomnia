@@ -1,0 +1,237 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/v1/championships/lives/"
+  method: GET
+  headers:
+    Client-ID: PREMIERE
+  queryParams:
+    - key: affiliateCode
+      value: RJ
+      disabled: true
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-type: application/json; charset=utf-8
+    date: Tue, 23 Jun 2026 20:54:39 GMT
+    transfer-encoding: chunked
+  body:
+    type: json
+    content: |-
+      {
+        "status": "success",
+        "data": [
+          {
+            "championship_id": 31,
+            "championship_name": "Copa do Brasil",
+            "championship_nickname": "",
+            "matches": [
+              {
+                "match_id": 352072,
+                "home_score": 0,
+                "away_score": 0,
+                "home_team": {
+                  "team_id": 283,
+                  "name": "Cruzeiro Esporte Clube",
+                  "popular_name": "Cruzeiro",
+                  "nickname": "Raposa",
+                  "slug": "cruzeiro",
+                  "sigla": "CRU",
+                  "shield": {
+                    "small": "https://s.sde.globo.com/media/organizations/2021/02/13/30_cruzeiro-2021.png",
+                    "medium": "https://s.sde.globo.com/media/organizations/2021/02/13/45_cruzeiro-2021.png",
+                    "large": "https://s.sde.globo.com/media/organizations/2021/02/13/65_cruzeiro-2021.png",
+                    "svg": "https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg"
+                  },
+                  "colors": {
+                    "primary": "#005cb0",
+                    "secondary": "#ffffff",
+                    "tertiary": "#000000"
+                  }
+                },
+                "away_team": {
+                  "team_id": 290,
+                  "name": "Goiás Esporte Clube",
+                  "popular_name": "Goiás",
+                  "nickname": "Esmeraldino",
+                  "slug": "goias",
+                  "sigla": "GOI",
+                  "shield": {
+                    "small": "https://s.sde.globo.com/media/organizations/2021/03/01/goias-30.png",
+                    "medium": "https://s.sde.globo.com/media/organizations/2021/03/01/goias-45.png",
+                    "large": "https://s.sde.globo.com/media/organizations/2021/03/01/goias-65.png",
+                    "svg": "https://s.sde.globo.com/media/organizations/2021/03/01/GOIAS-2021.svg"
+                  },
+                  "colors": {
+                    "primary": "#00612f",
+                    "secondary": "#f2f2f2",
+                    "tertiary": "#000000"
+                  }
+                },
+                "start_date": "2026-05-12",
+                "start_hour": "21:30:00",
+                "status": "Não disponivel",
+                "timer_status": "INICIADO",
+                "transmission_status": "EM_ANDAMENTO",
+                "transmission_time": "01'1T",
+                "period": "PRIMEIRO_TEMPO",
+                "current_time": "01:30",
+                "wo": false,
+                "canceled": false,
+                "suspended": false,
+                "decisive": false,
+                "revenue": 0,
+                "broadcasts": [
+                  {
+                    "transmissionId": 1688,
+                    "mediaId": "7339108",
+                    "urlSnapshot": "",
+                    "name": "sportv",
+                    "channelId": "2108",
+                    "slug": "sportv",
+                    "affiliateCode": "RJ",
+                    "authorizationExternalIds": [
+                      {
+                        "id": "",
+                        "aeid": "globoplay-canais",
+                        "type": "media-rights"
+                      },
+                      {
+                        "id": "",
+                        "aeid": "sportv",
+                        "type": "media-rights"
+                      }
+                    ]
+                  },
+                  {
+                    "transmissionId": 2858,
+                    "mediaId": "8223631",
+                    "urlSnapshot": "",
+                    "name": "Premiere",
+                    "channelId": "1995",
+                    "slug": "premiere",
+                    "affiliateCode": "RJ",
+                    "partner": {
+                      "name": "Premiere",
+                      "slug": "premiere",
+                      "small_logo": {
+                        "png": "",
+                        "svg": ""
+                      },
+                      "logo": {
+                        "png": "https://s3.glbimg.com/v1/AUTH_36abb2af534644878388f516c38b89ac/prod/partner_logo/Premiere.png",
+                        "svg": "https://s3.glbimg.com/v1/AUTH_36abb2af534644878388f516c38b89ac/prod/partner_logo/Premiere.svg"
+                      },
+                      "colors": {
+                        "primary": "#2E903C",
+                        "secondary": "#FFFFFF",
+                        "tertiary": "#FFFFFF"
+                      }
+                    },
+                    "authorizationExternalIds": [
+                      {
+                        "id": "",
+                        "aeid": "premiere-play-ott",
+                        "type": "media-rights"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "match_id": 352072,
+                "home_score": 0,
+                "away_score": 0,
+                "home_team": {
+                  "team_id": 283,
+                  "name": "Cruzeiro Esporte Clube",
+                  "popular_name": "Cruzeiro",
+                  "nickname": "Raposa",
+                  "slug": "cruzeiro",
+                  "sigla": "CRU",
+                  "shield": {
+                    "small": "https://s.sde.globo.com/media/organizations/2021/02/13/30_cruzeiro-2021.png",
+                    "medium": "https://s.sde.globo.com/media/organizations/2021/02/13/45_cruzeiro-2021.png",
+                    "large": "https://s.sde.globo.com/media/organizations/2021/02/13/65_cruzeiro-2021.png",
+                    "svg": "https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg"
+                  },
+                  "colors": {
+                    "primary": "#005cb0",
+                    "secondary": "#ffffff",
+                    "tertiary": "#000000"
+                  }
+                },
+                "away_team": {
+                  "team_id": 290,
+                  "name": "Goiás Esporte Clube",
+                  "popular_name": "Goiás",
+                  "nickname": "Esmeraldino",
+                  "slug": "goias",
+                  "sigla": "GOI",
+                  "shield": {
+                    "small": "https://s.sde.globo.com/media/organizations/2021/03/01/goias-30.png",
+                    "medium": "https://s.sde.globo.com/media/organizations/2021/03/01/goias-45.png",
+                    "large": "https://s.sde.globo.com/media/organizations/2021/03/01/goias-65.png",
+                    "svg": "https://s.sde.globo.com/media/organizations/2021/03/01/GOIAS-2021.svg"
+                  },
+                  "colors": {
+                    "primary": "#00612f",
+                    "secondary": "#f2f2f2",
+                    "tertiary": "#000000"
+                  }
+                },
+                "start_date": "2026-05-12",
+                "start_hour": "21:30:00",
+                "status": "Não disponivel",
+                "timer_status": "INICIADO",
+                "transmission_status": "EM_ANDAMENTO",
+                "transmission_time": "01'1T",
+                "period": "PRIMEIRO_TEMPO",
+                "current_time": "01:30",
+                "wo": false,
+                "canceled": false,
+                "suspended": false,
+                "decisive": false,
+                "revenue": 0,
+                "broadcasts": [
+                  {
+                    "transmissionId": 4952,
+                    "mediaId": "11134179",
+                    "urlSnapshot": "",
+                    "name": "ge tv",
+                    "channelId": "2160",
+                    "slug": "ge-tv",
+                    "affiliateCode": "RJ",
+                    "partner": {
+                      "name": "GE TV",
+                      "slug": "ge",
+                      "small_logo": {
+                        "png": "",
+                        "svg": ""
+                      },
+                      "logo": {
+                        "png": "https://s3.glbimg.com/v1/AUTH_36abb2af534644878388f516c38b89ac/prod/partner_logo/GE_TV.png",
+                        "svg": "https://s3.glbimg.com/v1/AUTH_36abb2af534644878388f516c38b89ac/prod/partner_logo/GE_TV.svg"
+                      },
+                      "colors": {
+                        "primary": "#7214EB",
+                        "secondary": "#410095",
+                        "tertiary": "#C3EB11"
+                      }
+                    },
+                    "authorizationExternalIds": [
+                      {
+                        "id": "",
+                        "aeid": "globoplay-gratuito",
+                        "type": "media-rights"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "especial_transmissions": []
+          }
+        ]
+      }
+order: 2835784468446604

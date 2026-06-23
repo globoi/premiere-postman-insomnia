@@ -1,6 +1,6 @@
 $kind: http-request
 name: estatisticas_atletas
-url: https://api.sde.globoi.com/jogos/:jogoId/estatisticas/atletas?scout_tipo_siglas=PB
+url: https://api.sde.globoi.com/jogos/:jogoId/estatisticas/atletas?scout_tipo_siglas=F
 method: GET
 headers:
   token: "{{sde_token}}"
@@ -9,9 +9,8 @@ queryParams:
     value: "94583"
     disabled: true
   - key: scout_tipo_siglas
-    value: PB
+    value: F
 pathVariables:
-  - key: jogoId
-    value: "352075"
+  jogoId: "352075"
 examples: ./.resources/estatisticas_atletas.resources/examples
 order: 4179986036507761
