@@ -1,0 +1,19 @@
+$kind: http-example
+request:
+  url: "{{base_url}}/v1/health"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    content-type: application/json; charset=utf-8
+    date: Tue, 01 Jul 2026 12:00:00 GMT
+  body:
+    type: json
+    content: |-
+      {
+        "status": "healthy",
+        "uptime": 123456,
+        "version": "2.1.0"
+      }
+order: 1

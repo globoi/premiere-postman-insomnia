@@ -1,6 +1,6 @@
 $kind: http-request
 name: get by id
-url: https://api.video.globoi.com/videos/with_navigation.json?access_token=apisportv1abcd105521a5361b6bab&extended_metadata.genre_ids.all=53346df2dd23814b50000fd4&service_id=6760&extended_metadata.season=18&program_id=29918&kind=episode
+url: https://api.video.globoi.com/videos/with_navigation.json?access_token=apisportv1abcd105521a5361b6bab&extended_metadata.genre_ids.all=53346df2dd23814b50000fd4&service_id=151&extended_metadata.season=18&kind=episode
 method: GET
 queryParams:
   - key: access_token
@@ -11,11 +11,9 @@ queryParams:
   - key: extended_metadata.genre_ids.all
     value: 53346df2dd23814b50000fd4
   - key: service_id
-    value: "6760"
+    value: "151"
   - key: extended_metadata.season
     value: "18"
-  - key: program_id
-    value: "29918"
   - key: kind
     value: episode
   - key: sde.nin

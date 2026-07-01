@@ -1,0 +1,2 @@
+# Exclude test workspaces
+*-workspace/

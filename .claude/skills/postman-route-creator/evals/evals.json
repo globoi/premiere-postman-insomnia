@@ -1,0 +1,23 @@
+{
+  "skill_name": "postman-route-creator",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "I need to add a new endpoint for the SDE collection. It's a GET request to fetch player rankings in a championship. The URL is https://api.sde.globoi.com/esportes/futebol/rankings/championship/{championshipId} and it needs the sde token header. Call it 'championship rankings' and put it in the SDE collection.",
+      "expected_output": "Creates a properly formatted .request.yaml file in postman/collections/SDE/ with correct structure including $kind, method GET, URL with path parameter, custom token header using {{sde_token}}, and appropriate order value",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "Create a GraphQL query for the geql collection to fetch match highlights. The query should be called 'matchHighlights' and take matchId as a required Int parameter. It should return highlight clips with id, title, duration, and thumbnail_url fields. Use variables with matchId: 346416",
+      "expected_output": "Creates a graphql-request type file with proper query structure, variable definitions with types, and a variables section with JSON. Should use {{geql_url}}/graphql endpoint and include proper YAML multiline formatting",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to add a mock response example for the Premier hub health endpoint. Create a success response with status 200, content-type json, and a body showing {\"status\": \"healthy\", \"uptime\": 123456, \"version\": \"2.1.0\"}. Save it as 'healthy-response' in the right location",
+      "expected_output": "Creates an http-example file in the correct .resources/health.resources/examples/ directory structure with proper $kind, request section matching the health endpoint, response with statusCode 200, appropriate headers, and the specified JSON body content",
+      "files": []
+    }
+  ]
+}

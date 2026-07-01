@@ -1,0 +1,10 @@
+$kind: http-request
+name: championship rankings
+url: https://api.sde.globoi.com/esportes/futebol/rankings/championship/:championshipId
+method: GET
+headers:
+  token: "{{sde_token}}"
+pathVariables:
+  - key: championshipId
+    value: ""
+order: 14000

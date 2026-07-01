@@ -1,0 +1,19 @@
+$kind: graphql-request
+name: matchHighlights
+url: "{{geql_url}}/graphql"
+query: |-
+  query matchHighlights($matchId: Int!) {
+    matchHighlights(matchId: $matchId) {
+      id
+      title
+      duration
+      thumbnail_url
+    }
+  }
+variables: |-
+  {
+    "matchId": 346416
+  }
+schema:
+  source: auto
+order: 7000
