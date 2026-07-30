@@ -7,7 +7,9 @@ queryParams:
 pathVariables:
   - key: serie-id
     value: htjdLKSwFN
+    description: ""
   - key: season_id
-    value: pFJs9NCHZn
+    value: qHsH8S15nG
+    description: ""
 examples: .resources/episodes.resources/examples
 order: 3092813902642348

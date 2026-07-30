@@ -1,9 +1,12 @@
 $kind: http-request
+name: by serieId
 url: https://api.video.globoi.com/v1/series/:serie-id?access_token=premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
 method: GET
 queryParams:
   access_token: premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
 pathVariables:
-  serie-id: htjdLKSwFN
+  - key: serie-id
+    value: htjdLKSwFN
+    description: ""
 examples: .resources/by serieId.resources/examples
 order: 1777488575118

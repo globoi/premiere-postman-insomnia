@@ -9,8 +9,8 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "application/json" });
     return res.end(JSON.stringify({ status: "ok" }));
   }
-   
-   // @endpoint GET /graphql
+
+  // @endpoint GET /graphql
   const pathname = new URL(req.url, `http://${req.headers.host}`).pathname;
   if (pathname === "/graphql") {
     return pm.mock.sendExample("postman/collections/Jarvis/.resources/get_lives.resources/examples/get_lives.example.yaml", res);
@@ -21,9 +21,18 @@ const server = http.createServer((req, res) => {
     return pm.mock.sendExample("postman/collections/webmedia/trilha por campeonato/.resources/by serieId.resources/examples/htjdLKSwFN.example.yaml", res);
   }
 
-    // @endpoint GET /v1/series/htjdLKSwFN/seasons/ZTMJ2hS17V/episodes.json
+  // @endpoint GET /v1/series/htjdLKSwFN/seasons/ZTMJ2hS17V/episodes.json
   if (method === "GET" && pathname === "/v1/series/htjdLKSwFN/seasons/ZTMJ2hS17V/episodes.json") {
     return pm.mock.sendExample("postman/collections/webmedia/trilha por campeonato/.resources/episodes.resources/examples/ZTMJ2hS17V.example.yaml", res);
+  }
+  // @endpoint GET /v1/series/htjdLKSwFN/seasons/qHsH8S15nG/episodes.json
+  if (method === "GET" && pathname === "/v1/series/htjdLKSwFN/seasons/qHsH8S15nG/episodes.json") {
+    return pm.mock.sendExample("postman/collections/webmedia/trilha por campeonato/.resources/episodes.resources/examples/qHsH8S15nG.example.yaml", res);
+  }
+
+  // @endpoint GET /v1/videos/with_navigation.json
+  if (method === "GET" && pathname === "/videos/with_navigation.json") {
+    return pm.mock.sendExample("postman/collections/webmedia/trilha por campeonato/.resources/get session's video.resources/examples/with sde.example.yaml", res);
   }
 
 

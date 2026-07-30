@@ -1,0 +1,671 @@
+$kind: http-example
+request:
+  url: https://api.video.globoi.com/v1/series/:serie-id/seasons/:season_id/episodes.json?access_token=premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
+  method: GET
+  queryParams:
+    access_token: premiere_hub_3f236b16fbc77ba0e9ab0a1a98ecb4dc
+  pathVariables:
+    serie-id: htjdLKSwFN
+    season_id: qHsH8S15nG
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    date: Thu, 16 Jul 2026 18:52:57 GMT
+    content-type: application/json; charset=utf-8
+    transfer-encoding: chunked
+    connection: keep-alive
+    vary: Accept-Encoding
+    x-frame-options: SAMEORIGIN
+    x-xss-protection: 1; mode=block
+    x-content-type-options: nosniff
+    cache-control: max-age=300, public
+    etag: W/"b626eba39d2644d89982902000799be5"
+    x-request-id: f367858303eb66aebd2b33ca7c492503
+    x-runtime: "0.070541"
+    content-encoding: gzip
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": "9QKLMrRLWF",
+          "number": 1,
+          "title": "Série A - 2° Rodada: Bragantino x Atlético-MG",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Bragantino x Atlético-MG pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-04T19:00:01-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:19:37-03:00",
+          "updated_at": "2026-04-06T14:43:07-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14318136,
+            "duration": 3202366,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "6C1dKJZM9J",
+          "number": 2,
+          "title": "Série A - 2ª Rodada: Flamengo X Internacional",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Flamengo X Internacional pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-04T23:00:36-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:20:02-03:00",
+          "updated_at": "2026-04-06T14:43:06-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14318170,
+            "duration": 3236033,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              854,
+              640,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              480,
+              360,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "Czf11NrsMZ",
+          "number": 3,
+          "title": "Série A - 2° Rodada: Santos x São Paulo",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Santos x São Paulo pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-04T20:00:01-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:20:28-03:00",
+          "updated_at": "2026-04-06T14:43:06-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14318222,
+            "duration": 3253684,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "yzZwHp11t7",
+          "number": 4,
+          "title": "Série A - 2° Rodada: Remo x Mirassol",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Remo x Mirassol pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-04T20:00:02-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:20:54-03:00",
+          "updated_at": "2026-04-06T14:43:05-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14318260,
+            "duration": 3235299,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "gJzm9tC8Ns",
+          "number": 5,
+          "title": "Série A - 2° Rodada: Grêmio x Botafogo",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Grêmio x Botafogo pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-04T21:45:02-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:21:20-03:00",
+          "updated_at": "2026-04-06T14:43:05-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14318335,
+            "duration": 3264661,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              1280,
+              854,
+              1920
+            ],
+            "video_heights": [
+              360,
+              720,
+              480,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "mXmqHxQgs7",
+          "number": 6,
+          "title": "Série A - 2° Rodada: Palmeiras x Vitória",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Palmeiras x Vitória pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-04T21:30:00-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-11T15:21:49-03:00",
+          "updated_at": "2026-04-06T14:43:04-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14318345,
+            "duration": 3197995,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              1280,
+              854,
+              1920
+            ],
+            "video_heights": [
+              360,
+              720,
+              480,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "kK7721Q1d5",
+          "number": 7,
+          "title": "Série A - 2° Rodada: Bahia x Fluminense",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Bahia x Fluminense pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-05T19:00:02-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-10T15:28:15-03:00",
+          "updated_at": "2026-04-06T14:43:04-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14321833,
+            "duration": 3239970,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "wFMPgKjBFJ",
+          "number": 8,
+          "title": "Série A - 2° Rodada: Cruzeiro x Coritiba",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Cruzeiro x Coritiba pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-05T21:30:02-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-10T15:28:15-03:00",
+          "updated_at": "2026-04-06T14:43:03-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14321856,
+            "duration": 3288819,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              1280,
+              854,
+              1920
+            ],
+            "video_heights": [
+              360,
+              720,
+              480,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        },
+        {
+          "id": "LdTLwr7NVn",
+          "number": 9,
+          "title": "Série A - 2° Rodada: Athletico-PR x Corinthians",
+          "original_title": "Brasileirão no Premiere",
+          "release_year": null,
+          "description": "Assista ao compacto do jogo Athletico-PR x Corinthians pela 2ª rodada do Campeonato Brasileiro 2026.",
+          "parent_title": "htjdLKSwFN",
+          "product": 1,
+          "released_at": "2026-02-19T19:00:02-03:00",
+          "parent_season": "qHsH8S15nG",
+          "availability_rules": [
+            "ALLOW_BR"
+          ],
+          "preview_url": null,
+          "adult_content": false,
+          "cast": [],
+          "cast_names": [],
+          "directors": [],
+          "director_names": [],
+          "characters": [],
+          "character_names": [],
+          "authors": [],
+          "author_names": [],
+          "screenwriters": [],
+          "screenwriter_names": [],
+          "art_directors": [],
+          "art_director_names": [],
+          "content_rating": null,
+          "content_rating_criteria": [],
+          "self_rated": true,
+          "created_at": "2026-02-20T01:00:06-03:00",
+          "updated_at": "2026-04-06T14:42:58-03:00",
+          "verify_content_rating": false,
+          "playback_data": {
+            "video_id": 14363417,
+            "duration": 3280010,
+            "status": "published"
+          },
+          "technical_specs_metadata": {
+            "video_aspect_ratio": "16:9",
+            "video_orientation": "horizontal",
+            "video_widths": [
+              640,
+              854,
+              1280,
+              1920
+            ],
+            "video_heights": [
+              360,
+              480,
+              720,
+              1080
+            ],
+            "video_coding_formats": [
+              "h264"
+            ],
+            "video_color_depths": [
+              "sdr"
+            ],
+            "audio_layouts": [
+              "stereo"
+            ],
+            "audio_languages": [
+              "por"
+            ],
+            "subtitle_languages": [],
+            "audio_description_languages": [],
+            "closed_caption_languages": []
+          }
+        }
+      ]
+order: 381655049328783

@@ -1,0 +1,8 @@
+$kind: http-request
+name: New Request
+url: https://apis.esporte.globoi.com/api/v2/premiere-stats/premiere?filter[where][category][eq]=Goleiro&filter[limit]=999
+method: GET
+queryParams:
+  filter[where][category][eq]: Goleiro
+  filter[limit]: "999"
+order: 1641862296240763
