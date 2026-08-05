@@ -1,0 +1,62 @@
+$kind: http-example
+request:
+  url: "{{BACKSTAGE_BASE_URL}}/tr-transmissao/ge?filter[where][data_realizacao][between][0]=2026-07-29T20:09:11.769Z&filter[where][data_realizacao][between][1]=2026-07-30T06:09:11.769Z&filter[where][status.slug][in][]=published&filter[where][status.slug][in][]=published_draft&filter[where][status_transmissao]=EM_ANDAMENTO&filter[where][videosTransmissao.video.identifier]=6942237"
+  method: GET
+  queryParams:
+    - key: filter[where][data_realizacao][between][0]
+      value: "2026-07-29T20:09:11.769Z"
+    - key: filter[where][data_realizacao][between][1]
+      value: "2026-07-30T06:09:11.769Z"
+    - key: filter[where][status.slug][in][]
+      value: published
+    - key: filter[where][status.slug][in][]
+      value: published_draft
+    - key: filter[where][status_transmissao]
+      value: EM_ANDAMENTO
+    - key: filter[where][videosTransmissao.video.identifier]
+      value: "6942237"
+      description: Media ID
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Thu, 30 Jul 2026 01:09:12 GMT
+    - key: content-type
+      value: application/json; profile="https://apis.backstage.globoi.com/api/v2/item-schemas/tr-transmissao"
+    - key: content-length
+      value: "791"
+    - key: link
+      value: <https://apis.backstage.globoi.com/api/v2/item-schemas/tr-transmissao>; rel="describedby"
+    - key: x-request-id
+      value: 0950e422815e32ef2e76eada075f114c
+    - key: x-served-from
+      value: Backstage APIaaS
+    - key: organization
+      value: gglobo-apigee-hdg-prd
+    - key: environment
+      value: backstage-prod
+    - key: proxy-name
+      value: backstage-prod-apis
+    - key: access-control-allow-credentials
+      value: "true"
+    - key: access-control-allow-origin
+      value: not-allowed-origin
+    - key: via
+      value: 1.1 google
+    - key: x-debug-base_domain
+      value: backstage
+    - key: x-debug-vts_key
+      value: r1:/apis-prod
+    - key: x-debug-valid_env
+      value: "1"
+    - key: x-debug-apigee_hostname
+      value: backstage-apigee.gcp.i.globo
+    - key: x-debug-connection-upgrade
+      value: "'-'"
+  body:
+    type: json
+    content: >-
+      {"itemCount": 0, "item_count": 0, "items": [], "limit": 10, "orderQs": {"filter[page]": "1", "filter[perPage]": "10", "filter[where][data_realizacao][between][0]": "2026-07-29T20:09:11.769Z", "filter[where][data_realizacao][between][1]": "2026-07-30T06:09:11.769Z", "filter[where][status.slug][in][]": "published", "filter[where][status_transmissao]": "EM_ANDAMENTO", "filter[where][videosTransmissao.video.identifier]": "6942237"}, "paginateQs": {"filter[order]": "modified DESC", "filter[where][data_realizacao][between][0]": "2026-07-29T20:09:11.769Z", "filter[where][data_realizacao][between][1]": "2026-07-30T06:09:11.769Z", "filter[where][status.slug][in][]": "published", "filter[where][status_transmissao]": "EM_ANDAMENTO", "filter[where][videosTransmissao.video.identifier]": "6942237"}, "perPage": 10, "tenantId": "ge"}
+order: 2282212057678316
+name: 2026-07-30

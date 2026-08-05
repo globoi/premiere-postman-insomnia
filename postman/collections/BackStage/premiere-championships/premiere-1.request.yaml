@@ -11,3 +11,4 @@ queryParams:
   - key: filter[order]
     value: position
 order: 27341431106574
+examples: .resources/premiere-1.resources/examples

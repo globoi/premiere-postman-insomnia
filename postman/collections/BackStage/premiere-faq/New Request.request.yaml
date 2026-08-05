@@ -1,0 +1,5 @@
+$kind: http-request
+name: New Request
+url: https://apis.backstage.qa.globoi.com/api/v2/globosat-premiere-faq-api/premiere
+method: GET
+order: 1785519398072

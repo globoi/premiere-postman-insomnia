@@ -24,9 +24,13 @@ postman/collections/
 ├── [CollectionName]/          # e.g., "Premier hub", "BackStage", "SDE"
 │   ├── .resources/
 │   │   └── definition.yaml    # Collection-level config (auth, variables)
-│   ├── [subfolder]/           # Optional organization (e.g., "championships-lives")
-│   │   └── route.request.yaml
-│   └── route.request.yaml     # Individual API requests
+│   ├── [subfolder]/           # Optional organization (e.g., "tr-transmissao")
+│   │   ├── route.request.yaml
+│   │   └── .resources/
+│   │       └── route.resources/
+│   │           └── examples/
+│   │               └── date description.example.yaml
+│   └── route.request.yaml
 ```
 
 ### File Types
@@ -34,6 +38,45 @@ postman/collections/
 1. **Request files** (`.request.yaml`): Define API endpoints with method, URL, headers, body
 2. **Example files** (`.example.yaml`): Mock responses stored in `.resources/[name].resources/examples/`
 3. **Definition files** (`definition.yaml`): Collection-level authentication and variables
+
+## Deterministic Route Matching
+
+When a user asks to create examples from a captured request, match it to the correct request file using these rules:
+
+### Jarvis
+| Condition | Request file |
+|-----------|-------------|
+| host contains `jarvis` AND path contains `/graphql` | `Jarvis/get_lives.request.yaml` |
+
+### BackStage (`apis.backstage.globoi.com`)
+| Condition | Request file |
+|-----------|-------------|
+| path `/tr-transmissao/ge` AND query has `id_jogo_sde` | `BackStage/tr-transmissao/match by matchId.request.yaml` |
+| path `/tr-transmissao/ge` AND query has `data_realizacao` WITHOUT `videosTransmissao` | `BackStage/tr-transmissao/match by date.request.yaml` |
+| path `/tr-transmissao/ge` AND query has `videosTransmissao` | `BackStage/tr-transmissao/match by mediaId.request.yaml` |
+| path `/premiere-championships/premiere` (no `titleId` filter) | `BackStage/premiere-championships/premiere-1.request.yaml` |
+
+### Examples Directory Derivation
+
+Given a request file path, the examples directory is always:
+```
+<request_file_dir>/.resources/<request-name>.resources/examples/
+```
+where `<request-name>` = filename with `.request.yaml` stripped.
+
+**Examples:**
+- `BackStage/tr-transmissao/match by matchId.request.yaml`
+  → `BackStage/tr-transmissao/.resources/match by matchId.resources/examples/`
+- `Jarvis/get_lives.request.yaml`
+  → `Jarvis/.resources/get_lives.resources/examples/`
+
+### `examples:` Field in Request Files
+
+Some request files already have an `examples:` field pointing to the examples directory. If the field is **missing**, add it at the end of the request file:
+```yaml
+examples: .resources/<request-name>.resources/examples
+```
+Check for the field before writing, and only add if absent.
 
 ## Creating Routes
 
@@ -58,14 +101,6 @@ Based on the request type, read the relevant reference file for examples:
 - **GraphQL requests**: Read `references/graphql-examples.md`
 - **Mock responses**: Read `references/mock-examples.md`
 
-Each reference file contains annotated examples showing:
-- Basic structure and required fields
-- How to use environment variables (`{{variable}}`)
-- Query parameters and headers patterns
-- Body formats (JSON, urlencoded, GraphQL)
-- Authentication inheritance from collections
-- Post-response scripts for token handling
-
 ### Step 3: Gather Requirements
 
 Ask the user for any missing information:
@@ -89,7 +124,6 @@ Generate the `.request.yaml` file following these patterns:
 - Order field controls display order in Postman UI
 - Query params can be disabled with `disabled: true`
 - Headers use key-value pairs
-- Body types: `json`, `urlencoded`, `graphql`, `raw`
 
 **File location:**
 - Direct in collection: `postman/collections/[Collection]/[name].request.yaml`
@@ -97,24 +131,17 @@ Generate the `.request.yaml` file following these patterns:
 
 ### Step 5: Create Mock Examples (if requested)
 
-When creating mock responses:
+When creating mock responses, read `references/mock-examples.md` for the correct format.
 
-1. Create the examples directory structure:
-   ```
-   postman/collections/[Collection]/.resources/[request-name].resources/examples/
-   ```
+**Critical format selection** — choose based on the collection:
 
-2. Generate `.example.yaml` files with:
-   - Request details (method, URL, headers)
-   - Response details (statusCode, statusText, headers)
-   - Sample response body (realistic JSON data)
+| Collection | URL env var | Body format | `name:` / `order:` fields |
+|------------|-------------|-------------|--------------------------|
+| BackStage | `{{BACKSTAGE_BASE_URL}}` | `content: >-` (single-line JSON) | no |
+| Jarvis | real URL | `content: '...'` (single-quoted JSON) | yes, at file root |
+| Premier hub | `{{base_url}}` | `content: \|-` (multiline JSON) | optional |
 
-3. Reference the YAML path in mock server if needed:
-   ```javascript
-   if (method === "GET" && pathname === "/your-path") {
-     return pm.mock.sendExample("path/to/example.yaml", res);
-   }
-   ```
+All formats use **list-style** for both `queryParams` and `headers` (`- key: ... value: ...`).
 
 ## Authentication Patterns
 
@@ -153,10 +180,13 @@ scripts:
 ## Workflow Summary
 
 1. Identify the collection and determine if subfolder is needed
-2. Read the appropriate reference file for examples
-3. Gather route details from the user
+2. Use deterministic route matching rules above to find the correct request file
+3. Read the appropriate reference file for format examples
 4. Create the `.request.yaml` file in the correct location
-5. If mock responses requested, create `.example.yaml` files
+5. If mock responses requested:
+   a. Compute the examples directory from the formula above
+   b. Check if `examples:` field exists in the request file; add it if missing
+   c. Create `.example.yaml` files using the format for the collection
 6. Confirm file paths and show the user what was created
 
 ## Tips
@@ -166,3 +196,4 @@ scripts:
 - Leverage environment variables for flexibility across dev/prd environments
 - Mock examples should have realistic, complete response structures
 - Check existing routes in the collection for naming and pattern consistency
+- Example filenames follow the pattern: `YYYY-MM-DD <description>.example.yaml`

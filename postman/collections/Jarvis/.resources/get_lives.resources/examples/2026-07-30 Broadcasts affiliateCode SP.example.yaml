@@ -1,0 +1,194 @@
+$kind: http-example
+request:
+  url: https://jarvis-rpaas-be-gcp-prod.rpaasv2-be.tsuru.gcp.i.globo/graphql?query=query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broadcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmissionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20authorizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slug%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20description%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20matchId%20%7D%20%7D%20%7D%20%7D%20%7D&variables={"filtersInput":{"affiliateCode":"SP"}}
+  method: GET
+  headers:
+    - key: x-platform-id
+      value: back-end
+    - key: x-device-id
+      value: undefined
+    - key: x-client-version
+      value: premiere
+  queryParams:
+    - key: query
+      value: "query%20Broadcasts%28%24filtersInput%3A%20BroadcastInput%29%20%7B%20broa\
+        dcasts%28filtersInput%3A%20%24filtersInput%29%20%7B%20mediaId%20transmi\
+        ssionId%20name%20affiliateCode%20media%20%7B%20description%20title%20%7\
+        B%20headline%20%7D%20headline%20thumb%20channel%20%7B%20id%20%7D%20auth\
+        orizationExternalIds%20%7B%20aeid%20type%20%7D%20%7D%20channelId%20slu\
+        g%20epgCurrentSlots%28limit%3A%201%29%20%7B%20relatedEventId%20name%20d\
+        escription%20relatedEvent%20%7B%20...%20on%20SoccerMatch%20%7B%20id%20m\
+        atchId%20%7D%20%7D%20%7D%20%7D%20%7D"
+    - key: variables
+      value: '{"filtersInput":{"affiliateCode":"SP"}}'
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    - key: date
+      value: Thu, 30 Jul 2026 01:09:10 GMT
+    - key: content-type
+      value: application/json; charset=utf-8
+    - key: transfer-encoding
+      value: chunked
+    - key: connection
+      value: keep-alive
+    - key: vary
+      value: Accept-Encoding, x-tenant-id, x-country-code, x-profile-type
+    - key: access-control-allow-origin
+      value: "*"
+    - key: cache-control
+      value: max-age=300, public
+    - key: etag
+      value: W/"a1e-2XVes/2ODA5wKGCRym7grfqUCVA"
+    - key: x-request-id
+      value: c307015708d39027d6540424e467639c
+    - key: x-cache-be
+      value: HIT
+    - key: content-encoding
+      value: gzip
+  body:
+    type: json
+    content: >-
+      {
+        "data": {
+          "broadcasts": [
+            {
+              "mediaId": "6082049",
+              "transmissionId": 956,
+              "name": "Premiere 24 horas",
+              "affiliateCode": "SP",
+              "media": {
+                "description": "Canal 24 horas",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Premiere Clubes",
+                "thumb": "https://s02.video.glbimg.com/x216/6082049.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "936",
+              "slug": "premiere-24-horas",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:346289",
+                  "name": "Campeonato Brasileiro De Futebol",
+                  "description": "Aqui no Brasileirão tem coisa pra caramba! Tem a qualidade em 4K, tem o Aquecimento com muito pré-jogo e tem o Super Brasileirão de Sábado com os melhores jogos!",
+                  "relatedEvent": {
+                    "id": "sde:346289",
+                    "matchId": "346289"
+                  }
+                }
+              ]
+            },
+            {
+              "mediaId": "6942200",
+              "transmissionId": 1515,
+              "name": "Premiere 2",
+              "affiliateCode": "SP",
+              "media": {
+                "description": "Transmissão ao Vivo – Premiere",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Transmissão ao Vivo – Premiere",
+                "thumb": "https://s01.video.glbimg.com/x216/6942200.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "936",
+              "slug": "premiere-2",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:346281",
+                  "name": "Campeonato Brasileiro De Futebol",
+                  "description": "Aqui no Brasileirão tem coisa pra caramba! Tem a qualidade em 4K, tem o Aquecimento com muito pré-jogo e tem o Super Brasileirão de Sábado com os melhores jogos!",
+                  "relatedEvent": {
+                    "id": "sde:346281",
+                    "matchId": "346281"
+                  }
+                }
+              ]
+            },
+            {
+              "mediaId": "6942216",
+              "transmissionId": 1516,
+              "name": "Premiere 3",
+              "affiliateCode": "SP",
+              "media": {
+                "description": "Transmissão ao Vivo – Premiere",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Transmissão ao Vivo – Premiere",
+                "thumb": "https://s01.video.glbimg.com/x216/6942216.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "936",
+              "slug": "premiere-3",
+              "epgCurrentSlots": [
+                {
+                  "relatedEventId": "sde:346281",
+                  "name": "Charla No Premiere",
+                  "description": "O Premiere traz a transmissão mais humorada da internet brasileira.",
+                  "relatedEvent": {
+                    "id": "sde:346281",
+                    "matchId": "346281"
+                  }
+                }
+              ]
+            },
+            {
+              "mediaId": "6942237",
+              "transmissionId": 1521,
+              "name": "Premiere 8",
+              "affiliateCode": "SP",
+              "media": {
+                "description": "Transmissão ao Vivo – Premiere",
+                "title": {
+                  "headline": "Premiere Clubes"
+                },
+                "headline": "Transmissão ao Vivo – Premiere",
+                "thumb": "https://s02.video.glbimg.com/x216/6942237.jpg",
+                "channel": {
+                  "id": "936"
+                },
+                "authorizationExternalIds": [
+                  {
+                    "aeid": "premiere-fc",
+                    "type": "media-rights"
+                  }
+                ]
+              },
+              "channelId": "936",
+              "slug": "premiere-8",
+              "epgCurrentSlots": []
+            }
+          ]
+        }
+      }
+order: 3724223550256525
+name: 2026-07-30 Broadcasts affiliateCode SP

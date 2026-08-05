@@ -1,0 +1,12 @@
+{
+  "name": "2026-07-30",
+  "protocol": "http",
+  "port": 4501,
+  "mockSrc": "./mock-2026-07-30.js",
+  "autoRestartOnChange": true,
+  "logging": {
+    "level": "verbose",
+    "showBody": true
+  },
+  "id": "019fb3c9-f20d-77a6-ad44-cf7f14071157"
+}
