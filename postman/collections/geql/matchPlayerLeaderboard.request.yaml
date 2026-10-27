@@ -1,0 +1,67 @@
+$kind: graphql-request
+url: "{{geql_url}}/graphql"
+query: |-
+  query MatchPlayerLeaderboard(
+    $matchId: Int!
+    $moment: MyTeamMoment
+    $teamId: Int
+  ) {
+    matchPlayerLeaderboard(filter: {
+      matchId: $matchId
+      moment: $moment
+      teamId: $teamId
+      scopes: {
+        inMatchWindow: MATCH
+        outOfMatchWindow: CHAMPIONSHIP
+      }
+    }) {
+      scope
+      homeTeam {
+        id
+        popularName
+        abbreviation
+        colors { primary secondary tertiary }
+        badge(format: "150x150")
+      }
+      awayTeam {
+        id
+        popularName
+        abbreviation
+        colors { primary secondary tertiary }
+        badge(format: "150x150")
+      }
+      statistics {
+        code
+        title
+        subtitle
+        category
+        order
+        updown
+        players(limit: 5) {
+          value
+          teamSide
+          teamId
+          breakdown
+          athlete {
+            popularName
+            position { initials description }
+            photoURL(filter: { size: x50 })
+          }
+          matchAthlete {
+            popularName
+            position { initials description }
+            shirtNumber
+            photoURL(filter: { size: x50 })
+          }
+        }
+      }
+    }
+  }
+variables: |-
+  {
+    "matchId": 346313,
+    "moment": "AO_VIVO"
+  }
+schema:
+  source: auto
+order: 1607

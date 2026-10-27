@@ -1,4 +1,8 @@
 $kind: collection
+variables:
+  backstage_auth_token: ""
+  backstage_client_id: ""
+  backstage_client_secret: ""
 auth:
   - id: a1051758-0d91-45fe-97c1-30b7174d8fce
     type: bearer

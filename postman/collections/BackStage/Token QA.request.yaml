@@ -1,20 +1,12 @@
 $kind: http-request
 url: https://accounts.backstage.qa.globoi.com/token
 method: POST
-headers:
-  - key: Authorization
-    value: Basic UUxmdjZEaHE2QnZRZGJxMU1JZHk1QT09OkxUS3U3TUNmNDExZTh1aVFDRHRoQ0E9PQ==
-    disabled: true
-    description: premiere
-  - key: Authorization
-    value: ""
-    disabled: true
 body:
   type: urlencoded
   content:
     grant_type: client_credentials
-    client_id: mfNxozaRaVEczg68/YIiJw==
-    client_secret: ddifqY9MwZoC7rILaDe+DA==
+    client_id: "{{backstage_client_id}}"
+    client_secret: "{{backstage_client_secret}}"
 auth:
   type: noauth
 scripts:

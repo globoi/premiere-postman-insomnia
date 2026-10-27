@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{base_url}}/v1/mr-review/notify"
+method: POST
+headers:
+  Client-ID: PREMIERE
+order: 2961551219121249

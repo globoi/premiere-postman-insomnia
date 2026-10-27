@@ -1,0 +1,12 @@
+$kind: http-request
+name: New Request
+url: https://apis.backstage.globoi.com/api/v2/globosat-premiere-panic-mode-api/premiere
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "id": "panic-mode",
+        "active": false
+    }
+order: 1206445648613568

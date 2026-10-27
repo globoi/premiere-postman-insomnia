@@ -1,10 +1,20 @@
 $kind: http-request
-url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/campeonato-brasileiro/edicoes/campeonato-brasileiro-2026/estatisticas/atletas?atleta_ids=82730&por_pagina=50&scout_tipo_siglas=DE%2CPPD%2CF%2CPE%2CFC%2CZG%2CPV%2CRB%2CPC%2CCA
+name: New Request
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/campeonato-brasileiro/edicoes/campeonato-brasileiro-2026/estatisticas/atletas?atleta_ids=103056%2C103767%2C108469%2C145563%2C102975%2C77777%2C101807%2C141754%2C126471%2C122781%2C83257%2C113690%2C84847%2C144255%2C78478%2C150757%2C87470%2C115025%2C102256%2C142867%2C91607%2C150959%2C148206%2C110698%2C113113%2C123869%2C130843%2C80313%2C71536%2C80129%2C128431%2C123101%2C143193%2C90031%2C130842%2C146374%2C120433%2C123445%2C85626%2C112017%2C130906%2C125926%2C125746%2C127871%2C151120%2C105518&por_pagina=50&scout_tipo_siglas=ZG%2CPV%2CRB%2CDE%2CFC%2CPE%2CPC%2CPPD%2CCA%2CZB%2CX5%2CDD%2CCV%2CZF%2CPD%2CIM
 method: GET
 headers:
   token: "{{sde_token}}"
 queryParams:
-  atleta_ids: "82730"
-  por_pagina: "50"
-  scout_tipo_siglas: DE%2CPPD%2CF%2CPE%2CFC%2CZG%2CPV%2CRB%2CPC%2CCA
+  - key: atleta_ids
+    value: 103056%2C103767%2C108469%2C145563%2C102975%2C77777%2C101807%2C141754%2C126471%2C122781%2C83257%2C113690%2C84847%2C144255%2C78478%2C150757%2C87470%2C115025%2C102256%2C142867%2C91607%2C150959%2C148206%2C110698%2C113113%2C123869%2C130843%2C80313%2C71536%2C80129%2C128431%2C123101%2C143193%2C90031%2C130842%2C146374%2C120433%2C123445%2C85626%2C112017%2C130906%2C125926%2C125746%2C127871%2C151120%2C105518
+    disabled: false
+    description: ""
+  - key: por_pagina
+    value: "50"
+    disabled: false
+    description: ""
+  - key: scout_tipo_siglas
+    value: ZG%2CPV%2CRB%2CDE%2CFC%2CPE%2CPC%2CPPD%2CCA%2CZB%2CX5%2CDD%2CCV%2CZF%2CPD%2CIM
+    disabled: false
+    description: ""
 order: 9000

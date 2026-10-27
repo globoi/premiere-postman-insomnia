@@ -3,7 +3,8 @@ url: https://accounts.backstage.globoi.com/token
 method: POST
 headers:
   - key: Authorization
-    value: Basic UUxmdjZEaHE2QnZRZGJxMU1JZHk1QT09OkxUS3U3TUNmNDExZTh1aVFDRHRoQ0E9PQ==
+    value: Basic {{backstage_auth_token}}
+    disabled: false
     description: premiere
   - key: Authorization
     value: ""

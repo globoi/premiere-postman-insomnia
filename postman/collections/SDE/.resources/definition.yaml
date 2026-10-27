@@ -1,3 +1,5 @@
 $kind: collection
+name: SDE
 variables:
-  sde_token: ""
+  - key: sde_token
+    value: '1eaf2e9e87804e14a53da2ffd72f66b6'

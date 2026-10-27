@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://apis.backstage.globoi.com/api/v2/globosat-premiere-panic-mode-api/premiere
+method: GET
+order: 1785519398072

@@ -1,12 +1,11 @@
 $kind: http-request
-url: https://api.sde.globoi.com/jogos/:matchId/estatisticas/atletas?atleta_ids=87402&scout_tipo_siglas=DD
+name: estatisticas_atletas Copy
+url: https://api.sde.globoi.com/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/campeonatos/campeonato-brasileiro/edicoes/campeonato-brasileiro-2026/estatisticas/atletas?equipe_id=277&scout_tipo_siglas=ZG%2CPV%2CRB%2CDE%2CFC%2CPE%2CPC%2CPPD%2CCA%2CZB%2CX5%2CDD%2CCV%2CZF%2CPD%2CIM
 method: GET
 headers:
   token: "{{sde_token}}"
 queryParams:
-  atleta_ids: "87402"
-  scout_tipo_siglas: DD
-pathVariables:
-  matchId: "349011"
+  equipe_id: "277"
+  scout_tipo_siglas: ZG%2CPV%2CRB%2CDE%2CFC%2CPE%2CPC%2CPPD%2CCA%2CZB%2CX5%2CDD%2CCV%2CZF%2CPD%2CIM
 examples: ./.resources/estatisticas_atletas Copy.resources/examples
 order: 4426792691502365

@@ -1,0 +1,11 @@
+$kind: http-request
+name: equipe por id
+url: https://api.sde.globoi.com/equipes/:equipe_id
+method: GET
+headers:
+  token: "{{sde_token}}"
+pathVariables:
+  - key: equipe_id
+    value: "262"
+    description: ""
+order: 8753

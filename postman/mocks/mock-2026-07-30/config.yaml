@@ -1,0 +1,13 @@
+name: '2026-07-30'
+protocol: http
+port: 4501
+autoRestartOnChange: true
+logging:
+  level: verbose
+  showBody: true
+id: 019fb3c9-f20d-77a6-ad44-cf7f14071157
+version: 1
+scenarios:
+  - name: default
+    path: ./default.js
+    default: true

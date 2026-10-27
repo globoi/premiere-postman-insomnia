@@ -1,0 +1,14 @@
+$kind: http-request
+name: New Request
+url: https://apis.backstage.globoi.com/api/v2/globosat-premiere-faq-api/premiere?filter[order]=order asc,name asc&filter[isEnabled]=true
+method: GET
+queryParams:
+  - key: filter[order]
+    value: order asc,name asc
+    disabled: false
+    description: ""
+  - key: filter[isEnabled]
+    value: "true"
+    disabled: false
+    description: ""
+order: 1785519398072
